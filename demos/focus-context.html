@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Focus causes change in context</title>
+      <style type="text/css">
+        /* line 3, ../scss/styles.scss */
+        body {
+          background-color: #ffffff;
+        }
+
+        /* line 6, ../scss/styles.scss */
+        kbd {
+          -moz-border-radius: 3px;
+          -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+          -webkit-border-radius: 3px;
+          -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+          background-color: #f7f7f7;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+          color: #333;
+          display: inline-block;
+          font-family: Arial,Helvetica,sans-serif;
+          font-size: 11px;
+          line-height: 1.4;
+          margin: 0 .1em;
+          padding: .1em .6em;
+          text-shadow: 0 1px 0 #fff;
+        }
+
+        /* line 24, ../scss/styles.scss */
+        .sr {
+          position: absolute;
+          left: -10000px;
+          top: auto;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+        }
+
+        /* line 32, ../scss/styles.scss */
+        button {
+          /* sassy-button usage:
+          sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states)
+          */
+          font-size: 1.3em;
+          padding: 0.5em 1.5em;
+          display: inline-block;
+          cursor: pointer;
+          -moz-border-radius: 0.3em;
+          -webkit-border-radius: 0.3em;
+          border-radius: 0.3em;
+          *zoom: 1;
+          filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4476CC', endColorstr='#FF244886');
+          background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NzZjYyIvPjxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjMjIzMzg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+          background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4476cc), color-stop(70%, #223388));
+          background: -moz-linear-gradient(#4476cc, #223388 70%);
+          background: -webkit-linear-gradient(#4476cc, #223388 70%);
+          background: linear-gradient(#4476cc, #223388 70%);
+          -moz-box-shadow: #80a2dc 0 1px 0 inset;
+          -webkit-box-shadow: #80a2dc 0 1px 0 inset;
+          box-shadow: #80a2dc 0 1px 0 inset;
+          border: 1px solid #1d2b74;
+          color: white;
+          text-shadow: #172e55 0 -1px 0;
+          font: Calibri;
+          font-weight: bold;
+          padding: .5em 1em .5em 1em;
+        }
+        /* line 15, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+        button:hover {
+          text-decoration: none;
+        }
+        /* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+        button:hover {
+          background-color: #1d2b74;
+          background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzJSIgc3RvcC1jb2xvcj0iIzM1NjljMiIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMWQyYjc0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+          background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #3569c2), color-stop(75%, #1d2b74));
+          background: -moz-linear-gradient(#3569c2 3%, #1d2b74 75%);
+          background: -webkit-linear-gradient(#3569c2 3%, #1d2b74 75%);
+          background: linear-gradient(#3569c2 3%, #1d2b74 75%);
+        }
+        /* line 21, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+        button:active {
+          -moz-box-shadow: #1a2767 0 1px 2px inset;
+          -webkit-box-shadow: #1a2767 0 1px 2px inset;
+          box-shadow: #1a2767 0 1px 2px inset;
+        }
+        /* line 6, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+        button.disabled, button[disabled] {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+          opacity: 0.6;
+          background: #223388;
+          cursor: default;
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+        /* line 74, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+        button::-moz-focus-inner {
+          padding: 0 !important;
+          margin: -1px !important;
+        }
+        .tab {
+          padding: 1em;
+          position: relative;
+          bottom: -1px;
+          margin-bottom: 0;
+          border:1px solid black;
+        }
+        .selectedtab {
+          background-color:white;
+          border-bottom:1px solid white;
+        }
+        .unselectedtab {
+          background-color:lavender;
+          border-bottom:1px solid black;
+        }
+        .panel {
+          border: 1px solid black;
+          padding: 1em;
+          margin-top: 0;
+          z-index: -1;
+        }
+      </style>
+    </head>
+<body>
+<p>Click in the field below and then hit the <kbd>Tab</kbd> key twice.</p>
+<p style="padding-bottom: 1em;"><label>Random text field: <input type="text" placeholder="Click here first then tab twice!" style="width:20em"/></label></p>
+<p>
+  <a href="#" id="tab1" class="tab selectedtab">Tab 1</a>
+  <a href="#" id="tab2" class="tab unselectedtab">Tab 2</a>
+</p>
+<div class="panel" id="tabpanel1">
+  <p>
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.</p>
+  <p style="color: #8b0000; background-color: #ffff00; border: 2px solid #8b0000; padding: 1em;">How can I <a href="#">activate this link</a> with a keyboard?</p>
+  <p>
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.
+    Here is a whole bunch of text associated with tab 1.</p>
+</div>
+<div id="tabpanel2" class="panel" style="display:none;">
+  <p>
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.
+    Here is a whole bunch of text associated with tab 2.</p>
+</div>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+
+    $( document ).ready(function() {
+        $('#tab1').on('focus', function() {
+            $("#tabpanel1").show();
+            $('#tab1').addClass("selectedtab").removeClass("unselectedtab");
+            $('#tabpanel2').hide();
+            $('#tab2').addClass("unselectedtab").removeClass("selectedtab");
+        });
+        $('#tab2').on('focus', function() {
+            $("#tabpanel2").show();
+            $('#tab2').addClass("selectedtab").removeClass("unselectedtab");
+            $('#tabpanel1').hide();
+            $('#tab1').addClass("unselectedtab").removeClass("selectedtab");
+        });
+    });
+</script>
+</body>
+</html>

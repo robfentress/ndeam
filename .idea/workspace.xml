@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3fc454c-7587-468a-9dd2-9b79a47d266a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/custom.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4170">
+              <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/print/paper.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2955">
+              <caret line="197" selection-start-line="197" selection-end-line="197" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/print/pdf.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2565">
+              <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/print.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>organi</find>
+      <find>skip</find>
+      <find>DO_SKIP_LINKS</find>
+      <find>arbor day</find>
+      <find>height</find>
+      <find>img</find>
+      <find>width: 100</find>
+      <find>style=&quot;width:70%&quot;</find>
+      <find>style=&quot;max-height: calc(66vh); max-width: calc(66vw)&quot;</find>
+      <find>ref</find>
+      <find>nav</find>
+      <find>half</find>
+      <find>what's</find>
+      <find>style=&quot;max-height: calc(60vh); max-width: calc(60vw)&quot;</find>
+      <find>class=&quot;stretch&quot;</find>
+      <find>stretch</find>
+      <find>iframe</find>
+      <find>what did</find>
+      <find>Reporting</find>
+      <find>stretchy</find>
+      <find>stret</find>
+      <find>width</find>
+      <find>color</find>
+      <find>figc</find>
+      <find>motivat</find>
+      <find>right</find>
+      <find>keyboard</find>
+      <find>mark</find>
+      <find>blockquote</find>
+      <find>catara</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>li&gt;</replace>
+      <replace>&amp;gt;</replace>
+      <replace>&amp;t;</replace>
+      <replace>&amp;lt;</replace>
+      <replace>&lt;footer class=&quot;ref fragment&quot;&gt;</replace>
+      <replace>style=&quot;width:60%&quot;</replace>
+      <replace>style=&quot;max-height: calc(60vh); max-width: calc(60vw)&quot;</replace>
+      <replace>class=&quot;stretch&quot;</replace>
+      <replace>class=&quot;stretchy&quot;</replace>
+      <replace>stretch</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Downloads/Carol/Carol.html" />
+        <option value="$PROJECT_DIR$/demos/table-example.html" />
+        <option value="$PROJECT_DIR$/demos/table-non-example.html" />
+        <option value="$PROJECT_DIR$/css/notes.scss" />
+        <option value="$PROJECT_DIR$/plugin/notes/notes.html" />
+        <option value="$PROJECT_DIR$/css/notes.css" />
+        <option value="$PROJECT_DIR$/print.html" />
+        <option value="$PROJECT_DIR$/plugin/accessibility-helpers/accessibility-helpers.js" />
+        <option value="$PROJECT_DIR$/marcy.html" />
+        <option value="$PROJECT_DIR$/plugin/accessibility/helper.css" />
+        <option value="$PROJECT_DIR$/css/theme/hokie.scss" />
+        <option value="$PROJECT_DIR$/css/print/pdf.css" />
+        <option value="$PROJECT_DIR$/css/print/paper.css" />
+        <option value="$PROJECT_DIR$/css/custom.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1280" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="1370" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="introaccess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="introaccess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="introaccess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="introaccess" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="introaccess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="introaccess" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="print" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="introaccess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="introaccess" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/css/theme" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3fc454c-7587-468a-9dd2-9b79a47d266a" name="Default Changelist" comment="" />
+      <created>1538397155993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538397155993</updated>
+      <workItem from="1538397157420" duration="7570000" />
+      <workItem from="1538416966066" duration="25922000" />
+      <workItem from="1538481482502" duration="21446000" />
+      <workItem from="1538569503955" duration="35667000" />
+      <workItem from="1539001211675" duration="51383000" />
+      <workItem from="1539695470685" duration="3198000" />
+      <workItem from="1539700789253" duration="47246000" />
+      <workItem from="1540219210368" duration="916000" />
+      <workItem from="1543421968534" duration="110000" />
+      <workItem from="1550092718450" duration="820000" />
+      <workItem from="1550151767812" duration="1209000" />
+      <workItem from="1551803756222" duration="32000" />
+      <workItem from="1551803982348" duration="854000" />
+      <workItem from="1551804898771" duration="1274000" />
+      <workItem from="1552996547123" duration="2938000" />
+      <workItem from="1553085793874" duration="5106000" />
+      <workItem from="1553098970918" duration="587000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="206278000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1280" y="23" width="1280" height="1370" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48356807" visible="true" weight="0.34814218" />
+      <window_info id="Structure" order="1" sideWeight="0.5031299" side_tool="true" weight="0.25178713" />
+      <window_info id="npm" order="2" sideWeight="0.5164319" side_tool="true" visible="true" weight="0.34814218" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32785603" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="GitLab Issues" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286385" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32434514" />
+      <window_info anchor="bottom" id="GitLabIntegration" order="13" />
+      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.45732185" />
+      <window_info anchor="bottom" id="AEM Console" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="AEM" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Downloads/Carol/Carol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="506" column="78" selection-start-line="506" selection-start-column="78" selection-end-line="506" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/mocks.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme/black.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="199" column="1" selection-start-line="199" selection-end-line="199" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/notes/notes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="328" column="33" lean-forward="true" selection-start-line="328" selection-start-column="33" selection-end-line="328" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/print.html" />
+    <entry file="file://$PROJECT_DIR$/demos/table-example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="57" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/table-non-example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/notes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/accessibility-helpers/accessibility-helper.css" />
+    <entry file="file://$PROJECT_DIR$/plugin/accessibility-helpers/accessibility-helpers.js" />
+    <entry file="file://$PROJECT_DIR$/lib/js/classList.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme/hokie.scss" />
+    <entry file="file://$PROJECT_DIR$/css/theme/white.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2807">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme/hokie.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="256" column="6" selection-start-line="256" selection-start-column="3" selection-end-line="256" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reveal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="293" column="14" selection-start-line="293" selection-start-column="9" selection-end-line="293" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1158" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/zoom-js/zoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2267">
+          <caret line="234" column="43" lean-forward="true" selection-start-line="234" selection-start-column="43" selection-end-line="234" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/accessibility/helper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/reveal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64577">
+          <caret line="4314" column="26" lean-forward="true" selection-start-line="4314" selection-start-column="26" selection-end-line="4314" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="279">
+            <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/accessibility/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marcy.html" />
+    <entry file="file://$PROJECT_DIR$/css/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4170">
+          <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/print/paper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2955">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/print/pdf.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/print.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

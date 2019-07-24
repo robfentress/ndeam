@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Keyboard Trap</title>
+  <style>
+
+    /* line 3, ../scss/styles.scss */
+    body {
+      background-color: #ffffff;
+    }
+
+    /* line 6, ../scss/styles.scss */
+    kbd {
+      -moz-border-radius: 3px;
+      -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+      -webkit-border-radius: 3px;
+      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+      color: #333;
+      display: inline-block;
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 11px;
+      line-height: 1.4;
+      margin: 0 .1em;
+      padding: .1em .6em;
+      text-shadow: 0 1px 0 #fff;
+    }
+
+    /* line 24, ../scss/styles.scss */
+    .sr {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    /* line 32, ../scss/styles.scss */
+    button {
+      /* sassy-button usage:
+      sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states)
+      */
+      font-size: 1.3em;
+      padding: 0.5em 1.5em;
+      display: inline-block;
+      cursor: pointer;
+      -moz-border-radius: 0.3em;
+      -webkit-border-radius: 0.3em;
+      border-radius: 0.3em;
+      *zoom: 1;
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4476CC', endColorstr='#FF244886');
+      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NzZjYyIvPjxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjMjIzMzg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4476cc), color-stop(70%, #223388));
+      background: -moz-linear-gradient(#4476cc, #223388 70%);
+      background: -webkit-linear-gradient(#4476cc, #223388 70%);
+      background: linear-gradient(#4476cc, #223388 70%);
+      -moz-box-shadow: #80a2dc 0 1px 0 inset;
+      -webkit-box-shadow: #80a2dc 0 1px 0 inset;
+      box-shadow: #80a2dc 0 1px 0 inset;
+      border: 1px solid #1d2b74;
+      color: white;
+      text-shadow: #172e55 0 -1px 0;
+      font: Calibri;
+      font-weight: bold;
+      padding: .5em 1em .5em 1em;
+    }
+    /* line 15, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+    button:hover {
+      text-decoration: none;
+    }
+    /* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+    button:hover {
+      background-color: #1d2b74;
+      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzJSIgc3RvcC1jb2xvcj0iIzM1NjljMiIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMWQyYjc0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #3569c2), color-stop(75%, #1d2b74));
+      background: -moz-linear-gradient(#3569c2 3%, #1d2b74 75%);
+      background: -webkit-linear-gradient(#3569c2 3%, #1d2b74 75%);
+      background: linear-gradient(#3569c2 3%, #1d2b74 75%);
+    }
+    /* line 21, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+    button:active {
+      -moz-box-shadow: #1a2767 0 1px 2px inset;
+      -webkit-box-shadow: #1a2767 0 1px 2px inset;
+      box-shadow: #1a2767 0 1px 2px inset;
+    }
+    /* line 6, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+    button.disabled, button[disabled] {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+      opacity: 0.6;
+      background: #223388;
+      cursor: default;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    /* line 74, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+    button::-moz-focus-inner {
+      padding: 0 !important;
+      margin: -1px !important;
+    }
+    #textarea {
+      border: 1px solid #3d7e9a;
+      max-width: calc(100% - 40px - 6px);
+      padding: 20px;
+      width: calc(100% - 40px - 6px);
+      border-width: 1px 1px 1px 5px;
+    }
+  </style>
+</head>
+<body>
+<p>Hey, look at this!  It&apos;s the world&apos;s simplest text editor that supports indent! </p>
+<p>Place your cursor in the field, type some text, and then hit the <kbd>Tab</kbd> key to indent the text,
+  and the <kbd>Shift</kbd> + <kbd>Tab</kbd> keys to outdent.</p>
+<div><label for="textarea">Text Editor:</label></div>
+<div id="textarea" contenteditable="true">
+  <div>Edit me</div>
+</div>
+<p>What if I wanted to click <a href="youcheated.html">this link here</a> using only the keyboard after I had placed focus in the Input field above?</p>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var left = 10;
+        $('#textarea').on('keydown keyup blur', function(e){
+
+            if (e.which === 9 && !e.shiftKey) {
+                if (e.type === 'keydown') indent();
+                e.preventDefault();
+            }
+            if (e.which === 9 && e.shiftKey) {
+                if (e.type === 'keydown') outdent();
+                e.preventDefault();
+            }
+        });
+        var indent = function() {
+            left += 10;
+            $('#textarea').css('padding-left', left + 'px');
+        }
+        var outdent = function() {
+            if (left > 10) {
+                left -= 10;
+                $('#textarea').css('padding-left', left + 'px');
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

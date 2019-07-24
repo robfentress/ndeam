@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d330c6e7-71e3-4530-8fb3-3d44fe77c150" name="slides.hirerobplease.com" url="http://slides.hirerobplease.com">
+        <fileTransfer host="slides.hirerobplease.com" port="22" privateKey="$USER_HOME$/.ssh/dreamhost-git-key" rootFolder="/home/robfen4" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

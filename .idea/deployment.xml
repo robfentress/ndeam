@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="slides.hirerobplease.com">
+    <serverData>
+      <paths name="demos">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/hirerobplease.com/demos" local="$PROJECT_DIR$/../demos" web="/demos" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/../demos/node_modules" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="slides.hirerobplease.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/slides.hirerobplease.com/ucda" local="$PROJECT_DIR$" web="/ucda" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/__MACOSX" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
