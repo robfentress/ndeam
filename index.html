@@ -15,16 +15,16 @@
             max-width: 100%;
         }
         .view-switch {
-            display:none;
+            /* display:none; */
         }
     </style>
 </head>
 
 <body>
 <nav aria-label="View Options" class="view-switch no-print">
-    <a href="?uprocessed#/" class="unprocessed"><img src="img/clear-formatting.svg" alt="Clear formatting" title="Clear formatting" ></a>
-    <a href="." class="in-print"><img src="img/presentation.svg" alt="Presentation View" title="Presentation View"></a>
-    <a href="?print-pdf&showNotes=separate-page#/"><img src="img/print.svg" alt="Print View" title="Print View" class="in-pres"></a>
+    <a href="?uprocessed#/" class="unprocessed"><img src="img/clear-formatting.svg" style="height:1.5em; width:1.5em" alt="Clear formatting" title="Clear formatting" ></a>
+    <a href="." class="in-print"><img src="img/presentation.svg" alt="Presentation View" style="height:1.5em; width:1.5em"  title="Presentation View"></a>
+    <a href="?print-pdf&showNotes=separate-page#/"><img src="img/print.svg" alt="Print View" style="height:1.5em; width:1.5em"  title="Print View" class="in-pres"></a>
 </nav>
     <div class="reveal" role="main">
         <div class="slides">
@@ -217,7 +217,7 @@
                     <h2>That's you</h2>
                     <img src="img/ucda/old.jpeg" alt="Close up view of elderly person's head with hearing aid in ear" class="stretch">
                     <aside class="notes">
-                        <b>Read:</b> If so, that shouldn't come as a surprise.  50% of people 75 or older have disabilities. Since the average life expectancy in US is around 79 years old, you should consider, that that'll be you eventually, if you're lucky.
+                        <b>Read:</b> If so, that shouldn't come as a surprise.  50% of people 75 or older have disabilities. Since the average life expectancy in US is around 79 years old, you should consider that that'll be you eventually, if you're lucky.
                     </aside>
                     <footer class="ref fragment"><cite>Picture:
                         <a href="https://rawpixel.com">rawpixel.com</a> /
@@ -252,43 +252,67 @@
                 <section>
                     <h2>Law</h2>
                     <ul>
-                        <li class="fragment"><a href="https://www.dol.gov/oasam/regs/statutes/sec504.htm" target="_blank">Section 504 of the Rehabilitation Act of 1973</a></li>
-                        <li class="fragment"><a href="https://www.ada.gov/ada_title_II.htm" target="_blank">Title II</a> and <a href="https://www.ada.gov/ada_title_III.htm" target="_blank">Title III</a> of the Americans with Disabilities Act</li>
-                        <li class="fragment"><a href="https://www.section508.gov/manage/laws-and-policies" target="_blank">Section 508 of the Rehabilitation Act of 1973</a></li>
+                        <li class="fragment">Rehabilitation Act of 1973
+                            <ul>
+                                <li class="fragment"><a href="https://www.dol.gov/oasam/regs/statutes/sec504.htm" target="_blank">Section 504</a></li>
+                                <li class="fragment"><a href="https://www.section508.gov/manage/laws-and-policies" target="_blank">Section 508</a></li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Americans with Disabilities Act
+                            <ul>
+                                <li class="fragment"><a href="https://www.ada.gov/ada_title_II.htm" target="_blank">Title II</a></li>
+                                <li class="fragment"><a href="https://www.ada.gov/ada_title_III.htm" target="_blank">Title III</a></li>
+                            </ul>
+                        </li>
                         <li class="fragment">Other state and local requirements</li>
                     </ul>
                     <aside class="notes">
-                        <ul>
-                            <li>Section 504 of the Rehabilitation Act of 1973: Prohibits programs and activities receiving Federal financial assistance from discriminating against individuals with disabilities
-                                <ul>
-                                    <li>Programs receiving federal funds <strong>may not discriminate against those with disabilities</strong> based on their disability status. <strong>All government agencies, federally-funded projects, K-12 schools, postsecondary entities</strong> (state colleges, universities, and vocational training schools) fall into this category.</li>
-                                    <li>29 U.S.C.§794, states: No otherwise qualified individual with a disability in the United States... shall, solely by reason of her or his disability, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.</li>
-                                </ul>
+                        <ol>
+                            <li><b>Read:</b> So I mentioned that accessibility is a legal requirement, but what are those laws?  There are many that touch upon accessibility, but the most relevant for our context are the following:</li>
+                            <li>Reveal next fragment</li>
+                            <li><b>Read:</b> First, the Rehabilitation Act of 1973, particularly Sections 504 and 508 of that act.</li>
+                            <li>Reveal next fragment</li>
+                            <li>Section 504 prohibits programs and activities <strong>receiving Federal financial assistance</strong> from discriminating against individuals with disabilities.  <strong>All government agencies, federally-funded projects, K-12 schools, postsecondary entities</strong> (state colleges, universities, and vocational training schools) fall into this category.</li>
+                            <li>If people are interested, you can read directly the relevant parts of the law:
+                                <ol>
+                                    <li><blockquote>
+                                        29 U.S.C.§794, states: No otherwise qualified individual with a disability in the United States... shall, solely by reason of her or his disability, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.
+                                    </blockquote></li>
+                                </ol>
                             </li>
-                            <li>The Americans with Disabilities Act (ADA): Requires state and local governments to provide individuals with disabilities equal access to their programs, services, and activities
-                                <ul>
-                                    <li>Title II of the Americans with Disabilities Act (ADA) generally requires that <strong>state and local governments</strong> provide qualified individuals with disabilities <strong>equal access</strong> to their <strong>programs, services, or activities</strong> unless doing so would fundamentally alter the nature of their programs, services, or activities or would impose an undue burden.
-                                        <ul>
-                                            <li><strong>Title II covers state and local while Section 504 of rehab act only covers if entity receives federal assistance</strong></li>
-                                        </ul>
+                            <li>Reveal next fragment</li>
+                            <li><b>Read:</b> Section 508 of the Rehabilitation Act defines requirements for information technology accessibility (including, but not limited to, web accessibility) for Federal agencies and those receiving federal funds
+                                <ol>
+                                    <li>Section 508 lists specific requirements in terms of accessibility for information technology.</li>
+                                    <li>Not limited to the web</li>
+                                    <li>Has been harmonized with W3C standard for accessibility, the Web Content Accessibility Guidelines</li>
+                                </ol>
+                            </li>
+                            <li>Reveal next fragment</li>
+                            <li><b>Read:</b> The Americans with Disabilities Act (ADA) seeks to ensure equal access to programs, services, and activities for people with disabilities.
+                                <ol>
+                                    <li>Title II of the ADA generally requires that <strong>state and local governments</strong> provide qualified individuals with disabilities <strong>equal access</strong> to their <strong>programs, services, or activities</strong> unless doing so would fundamentally alter the nature of their programs, services, or activities or would impose an undue burden.  And in case you were wondering, that burden refers to the organization as a whole, in our case, Virginia Tech, rather than your individual department.
+                                        <ol>
+                                            <li><strong>Title II covers state and local while Section 504 of Rehab Act only applies if an entity receives federal assistance</strong></li>
+                                        </ol>
                                     </li>
-                                    <li><strong>Title III</strong> prevents requires <strong>private entities</strong> to make sure that <strong>places of public accommodation</strong> are accessible.  This is an evolving area of the law, but, in at least some cases, legal settlements suggest this applies to web sites.</li>
-                                </ul>
+                                    <li><strong>Title III</strong> on the other hand applies to <strong>private entities</strong> and requires that <strong>places of public accommodation</strong> be accessible.  This is an evolving area of the law, but, in at least some cases, legal settlements suggest this applies to web sites.</li>
+                                </ol>
                             </li>
-                            <li>Section 508: Defines requirements for information technology accessibility (including, but not limited to, web accessibility) for Federal agencies and those receiving federal funds
-                                <ul><li>Section 508 of Rehab Act lists specific requirements in terms of accessibility for information technology.</li>
-                                <li>Not limited to the web</li>
-                                <li>Has been harmonized with W3C standard for accessibility, the Web Content Accessibility Guidelines (Links to an external site.)Links to an external site. (WCAG).</li></ul>
-                            </li>
-
-                            <li>Depending on your country, state, or locality, there may be additional legal requirements.  For instance, in Virginia, the Information Technology Access Act, among other things, requires that state agencies ensure that any information technology they use be accessible to the blind and visually impaired.
-                                <ul>
-                                    <li><strong>§ 2.2-3502. Assurance of nonvisual access.:</strong> In general, the head of each covered entity shall ensure that information technology equipment and software used by blind or visually impaired employees, program participants, or members of the general public (i) provide access (including interactive use of the equipment and services) that is equivalent to that provided to individuals who are not blind or visually impaired; (ii) are designed to present information (including prompts used for interactive communications) in formats adaptable to both visual and nonvisual use; and (iii) have been purchased under a contract that includes the technology access clause required pursuant to § 2.2-3503.</li>
-                                    <li><strong>§ 2.2-3503. Procurement requirements.: </strong>B. At a minimum, the nonvisual access standards shall include the following: (i) the effective, interactive control and use of the technology (including the operating system), applications programs, and format of the data presented, shall be readily achievable by nonvisual means; (ii) the technology equipped for nonvisual access shall be compatible with information technology used by other individuals with whom the blind or visually impaired individual interacts; (iii) nonvisual access technology shall be integrated into networks used to share communications among employees, program participants, and the public; and (iv) the technology for nonvisual access shall have the capability of providing equivalent access by nonvisual means to telecommunications or other interconnected network services used by persons who are not blind or visually impaired. A covered entity may stipulate additional specifications in any procurement.
+                            <li>Reveal next fragment</li>
+                            <li><b>Read:</b> Depending on your country, state, or locality, there may be additional legal requirements.  For instance, in Virginia, the Information Technology Access Act, among other things, requires that state agencies ensure that any information technology they use be accessible to the blind and visually impaired.</li>
+                            <li>If people are interested, you can read directly the relevant parts of the law:
+                                <ol>
+                                    <li><blockquote>
+                                        <strong>§ 2.2-3502. Assurance of nonvisual access.:</strong> In general, the head of each covered entity shall ensure that information technology equipment and software used by blind or visually impaired employees, program participants, or members of the general public (i) provide access (including interactive use of the equipment and services) that is equivalent to that provided to individuals who are not blind or visually impaired; (ii) are designed to present information (including prompts used for interactive communications) in formats adaptable to both visual and nonvisual use; and (iii) have been purchased under a contract that includes the technology access clause required pursuant to § 2.2-3503.
+                                    </blockquote></li>
+                                    <li><blockquote>
+                                        <strong>§ 2.2-3503. Procurement requirements.: </strong>B. At a minimum, the nonvisual access standards shall include the following: (i) the effective, interactive control and use of the technology (including the operating system), applications programs, and format of the data presented, shall be readily achievable by nonvisual means; (ii) the technology equipped for nonvisual access shall be compatible with information technology used by other individuals with whom the blind or visually impaired individual interacts; (iii) nonvisual access technology shall be integrated into networks used to share communications among employees, program participants, and the public; and (iv) the technology for nonvisual access shall have the capability of providing equivalent access by nonvisual means to telecommunications or other interconnected network services used by persons who are not blind or visually impaired. A covered entity may stipulate additional specifications in any procurement.
+                                    </blockquote>
                                     </li>
-                                </ul>
+                                </ol>
                             </li>
-                        </ul>
+                        </ol>
                     </aside>
                 </section>
                 <section>
@@ -303,14 +327,22 @@
                         <li class="fragment"><a href="https://www.w3.org/WAI/standards-guidelines/atag/" target="_blank">Authoring Tool Accessibility Guidelines 2.0</a> (ATAG)</li>
                     </ul>
                     <aside class="notes">
-                        <h3>WCAG</h3>
-                        <p>Internationally-recognized standard that explains how to make web content more accessible to people with disabilities</p>
-
-                        <p>Developed by the Web Accessibility Initiative of the World Wide Web Consortium, which is the same overarching organization responsible for HTML and other web standards.
-                        On June 5, 2018 WCAG 2.1 (Links to an external site.)Links to an external site. came out, which is a significant update to the standard, expanding provisions for <strong>mobile, low vision, and cognitive and learning disabilities</strong>.</p>
-
-                        <h3>WAI-ARIA</h3>
-                        <p>Accessibility of web content requires semantic information about widgets, structures, and behaviors, in order to allow assistive technologies to convey appropriate information to persons with disabilities. This specification provides an ontology of roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications. These semantics are <strong>designed to allow an author to properly convey user interface behaviors and structural information to assistive technologies in document-level markup</strong>.</p>
+                        <ol>
+                            <li><b>Read:</b> In addition to laws governing accessibility, there are defined standards for what it means to be "accessible".</li>
+                            <li>Reveal next fragment, <b>WCAG</b>.</li>
+                            <li><b>Read:</b> The first of these is the Web Content Accessibility Guidelines or WCAG.</li>
+                            <li>WCAG is the internationally-recognized standard that explains how to make web content more accessible to people with disabilities.</li>
+                            <li>It was developed by the Web Accessibility Initiative of the World Wide Web Consortium, which is the same overarching organization responsible for HTML and other web standards.</li>
+                            <li>Reveal next fragment, <b>WCAG 2.1</b>.</li>
+                            <li><b>Read:</b> On June 5, 2018 WCAG 2.1 came out, which is a significant update to the standard, expanding provisions for <strong>mobile, low vision, and cognitive and learning disabilities</strong>.</li>
+                            <li>Reveal next fragment, <b>WAI-ARIA.</b></li>
+                            <li>Web pages have become more complex over time, such that some of them function essentially like desktop applications.  The Web Accessibility Initiation-Accessible Rich Internet Application standard, sometimes referred to as WAI-ARIA, or Way-ARIA, or just plain ARIA.</li>
+                            <li>Accessibility of web content requires semantic information about widgets, structures, and behaviors, in order to allow assistive technologies to convey appropriate information to persons with disabilities. This specification provides an ontology of roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications. These semantics are <strong>designed to allow an author to properly convey user interface behaviors and structural information to assistive technologies in document-level markup</strong>.</li>
+                            <li>Reveal next fragment, <b>ATAG</b>.</li>
+                            <li><b>Read:</b>Beyond ensuring that web content is accessible, it is important that the tools used to create that content are, themselves, accessible, which is what the Accessible Tool Authoring Guidelines, abbreviated as ATAG, are designed to address.</li>
+                            <li>ATAG provides guidelines for designing web content <strong>authoring tools</strong> that are both more <strong>accessible</strong> to authors with disabilities (Part A) and designed to enable, support, and promote the <strong>production of more accessible web content</strong> by all authors (Part B).</li>
+                        </ul>
+                        <p></p>
 
                         <h3>ATAG</h3>
                         <p>Provides guidelines for designing web content <strong>authoring tools</strong> that are both more <strong>accessible</strong> to authors with disabilities (Part A) and designed to enable, support, and promote the <strong>production of more accessible web content</strong> by all authors (Part B).</p>
@@ -336,7 +368,10 @@
                         </li>
                     </ul>
                     <aside class="notes">
-                        <ul>
+                        <ol>
+                            <li><b>Read:</b> The most important standrd of the ones I listed on the previous slides is the Web Content Accessibility Guidelines, so let's spend a little time digging into what that
+                            </li>
+                            <li></li>
                             <li><b>Perceivable:</b> Information and user interface components must be presentable to users in ways they can perceive.</li>
                             <li><b>Operable:</b> User interface components and navigation must be operable.</li>
                             <li><b>Understandable:</b> Information and the operation of user interface must be understandable.</li>
@@ -432,7 +467,7 @@
                 </section>
                 <section>
                     <h2>What's going on?</h2>
-                    <iframe title="Just Audio" width="560" height="315" src="https://www.youtube.com/embed/mrxO-XlgQ1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="stretch" aria-describedby="nodesc"></iframe>
+                    <iframe title="Just Audio" width="560" height="315" src="https://www.youtube.com/embed/mrxO-XlgQ1k" allow="autoplay; encrypted-media" allowfullscreen class="stretch" aria-describedby="nodesc"></iframe>
                     <div style="display:none" id="nodesc">No audio descriptions intentionally.  Audio-described version is under section with the heading "Better?"</div>
                     <aside class="notes">
                         <ol>
@@ -446,7 +481,7 @@
 
                 <section>
                     <h2>What did you miss?</h2>
-                    <iframe title="Audio and Video" width="560" height="315" src="https://www.youtube.com/embed/rqoZwql_tWs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="stretch" aria-describedby="nodesc"></iframe>
+                    <iframe title="Audio and Video" width="560" height="315" src="https://www.youtube.com/embed/rqoZwql_tWs" allow="autoplay; encrypted-media" allowfullscreen class="stretch" aria-describedby="nodesc"></iframe>
                     <aside class="notes">
                         <ol>
                             <li><b>Read:</b> Now I'm going to play the scene again with the video enabled.  I want you to tell me what important information was left out by not being able to see what was going on.</li>
@@ -460,7 +495,7 @@
 
                 <section>
                     <h2>Better?</h2>
-                    <iframe title="Audio Described" width="560" height="315" src="https://www.youtube.com/embed/2k6YymIDGu4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="stretch"></iframe>
+                    <iframe title="Audio Described" width="560" height="315" src="https://www.youtube.com/embed/2k6YymIDGu4" allow="autoplay; encrypted-media" allowfullscreen class="stretch"></iframe>
                     <aside class="notes">
                         <ol>
                             <li><b>Read:</b> How would you communicate that information to someone who is blind?  Let's find out!</li>
@@ -487,7 +522,7 @@
 
                 <section>
                     <h2>Screen Reader Demo</h2>
-                    <iframe title="Screen reader demonstration video" width="560" height="315" src="https://www.youtube.com/embed/y-ar9fRltwo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="stretch"></iframe>
+                    <iframe title="Screen reader demonstration video" width="560" height="315" src="https://www.youtube.com/embed/y-ar9fRltwo" allow="autoplay; encrypted-media" allowfullscreen class="stretch"></iframe>
                     <aside class="notes">
                         <ol>
                             <li><b>Read:</b> Earlier I mentioned that completely blind people will usually use screen reading software to read things on their computers.</li>
@@ -590,14 +625,14 @@
 
                 <section>
                     <h2><a href="https://www.w3.org/WAI/tutorials/page-structure/regions/" target="_blank">Page Regions</a></h2>
-                    <pre><code class="html hljs" data-trim data-noescape><div class="fragment">&lt;header role="banner"&gt; &lt;/header&gt;</div>
-<div class="fragment">&lt;nav role="navigation" aria-label="site"&gt;&hellip;&lt;/nav&gt;
-&lt;nav role="navigation" aria-label="page"&gt;&hellip;&lt;/nav&gt;</div>
-<div class="fragment">&lt;main role="main"&gt;&hellip;&lt;/main&gt;</div>
-<div class="fragment">&lt;aside role="complementary"&gt;&hellip;&lt;/aside&gt;</div>
-<div class="fragment">&lt;section role="region"&gt;&hellip;&lt;/section&gt;</div>
-<div class="fragment">&lt;footer role="contentinfo"&gt;&hellip;&lt;/footer&gt;</div>
-<div class="fragment">&lt;div role="search"&gt;&hellip;&lt;/div&gt;</div></code></pre>
+                    <div class="fragment"><pre><code class="html hljs" data-trim data-noescape>&lt;header role="banner"&gt; &lt;/header&gt;</code></pre></div>
+                    <div class="fragment"><pre><code class="html hljs" data-trim data-noescape>&lt;nav role="navigation" aria-label="site"&gt;&hellip;&lt;/nav&gt;
+&lt;nav role="navigation" aria-label="page"&gt;&hellip;&lt;/nav&gt;</code></pre></div>
+                    <div class="fragment"><pre><code class="html hljs" data-trim data-noescape>&lt;main role="main"&gt;&hellip;&lt;/main&gt;</code></pre></div>
+                    <div class="fragment"><pre><code class="html hljs" data-trim data-noescape>&lt;aside role="complementary"&gt;&hellip;&lt;/aside&gt;</code></pre></div>
+                    <div class="fragment"><pre><code class="html hljs" data-trim data-noescape>&lt;section role="region"&gt;&hellip;&lt;/section&gt;</code></pre></div>
+                    <div class="fragment"><pre><code class="html hljs" data-trim data-noescape>&lt;footer role="contentinfo"&gt;&hellip;&lt;/footer&gt;</code></pre></div>
+                    <div class="fragment"><pre><code class="html hljs" data-trim data-noescape>&lt;div role="search"&gt;&hellip;&lt;/div&gt;</code></pre></div>
 
                     <aside class="notes">
                         <p>Read the following, and reveal the relevant fragments as you talk about them (an asterisk indicates when to reveal a fragment.</p>
@@ -1070,7 +1105,7 @@
                 <section>
                     <h2>Zoom Text</h2>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/EEN79RRvKqE?rel=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+                            allow="autoplay; encrypted-media" allowfullscreen
                             title="ZoomText Demo"></iframe>
                     <aside class="notes">
                         <ol>
@@ -1095,7 +1130,7 @@
                             <li><b>Read:</b>
                                 <ul>
                                     <li>One other way to magnify things that doesn't require separate software is to <b>use your browsers native zooming</b> functionality.  </li>
-                                    <li>For instance in Safari I can magnify the page by pressing <kdb>Command</kdb> + <kbd>+</kbd> or choosing <b>Zoom In</b> from the <b>View</b> menu.  </li>
+                                    <li>For instance in Safari I can magnify the page by pressing <kbd>Command</kbd> + <kbd>+</kbd> or choosing <b>Zoom In</b> from the <b>View</b> menu.  </li>
                                     <li>This will make the text bigger, but can cause problems with horizontal scrolling unless you are using responsive design techniques that transform the layout as the viewport size decreases, which is essentially what is happening when you use Browser Zoom.</li>
                                 </ul>
                             </li>
@@ -1163,7 +1198,7 @@
                             <li><b>Read:</b> How do we know what is a link in the first paragraph now?</li>
                             <li>If necessary, explain that it is because the link is now styled to have an underline, so it doesn't rely on color</li>
                             <li><b>Read:</b> How do we know what is due tomorrow?</li>
-                            <li>If necessary, explain that it is because things that are due tomorrow are bold and also have an asterisk beside them.</li>
+                            <li>If necessary, explain that it is because things that are due tomorrow are bold and also "(due tomorrow)" beside them.</li>
                             <li>Disable the <b>Greyscale</b> filter in the <b>Color Carl</b> profile in the <b>Funkify</b> Chrome extension.</li>
                             <li>Return to the slide in Safari</li>
                             <li>Reveal the next fragment</li>
@@ -1188,7 +1223,7 @@
                 </section>
                 <section>
                     <h3>Captions</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iWO5N3n1DXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Video on Captions"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iWO5N3n1DXU" allow="autoplay; encrypted-media" allowfullscreen title="Video on Captions"></iframe>
                     <aside class="notes">
                         <ol>
                             <li>If there is time, play video.</li>
@@ -1200,14 +1235,25 @@
                     <footer class="ref fragment"><cite>W3C Web Accessibility Initiative (WAI). "Web Accessibility Perspectives: Video Captions" Online video clip. YouTube, 17 May 2016. Web. 9 October 2018.</cite></footer>
                 </section>
                 <section>
-                    <h3>YouTube Captions</h3>
+                    <h3>Adding Captions</h3>
                     <ul>
-                        <li><a href="https://support.google.com/youtube/answer/2734796?hl=en">Add your own subtitles &amp; closed captions on YouTube</a></li>
-                        <li><a class="" href="https://youtu.be/jiEybiElXgk">Manage fan-contributed captions and subtitles</a></li>
+                        <li>YouTube
+                            <ul>
+                                <li><a href="https://vt4help.service-now.com/sp?id=kb_article&sys_id=783d45bedb2db600515ff209af961914">Adding Closed Captions to YouTube</a></li>
+                                <li><a class="" href="https://youtu.be/jiEybiElXgk">Manage fan-contributed captions and subtitles</a></li>
+                            </ul>
+                        </li>
+                        <li>Kaltura
+                            <ul>
+                                <li><a href="https://vt4help.service-now.com/sp?id=kb_article&sys_id=f3424025dbb99f00c53b13141b9619b1#Cap">Captioning vieos yourself</a></li>
+                                <li><a class="" href="https://vt4help.service-now.com/sp?id=sc_cat_item&sys_id=85ad708edb510744515ff209af961987">Ordering professional captioning services</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> YouTube provides tools for you to add captions to your videos.</li>
+                            <li><b>Read:</b> Most people on campus are going to be making their videos available through YouTube or Kaltura, each of which provide the ability to add captions.YouTube provides tools for you to add captions to your videos.</li>
                             <li><b>Read:</b> It even provides tools for others to contribute captions for your videos.</li>
                             <li><b>Read:</b> I've provided links for you learn how to use these features.</li>
                         </ol>
@@ -1232,7 +1278,7 @@
 
                 <section>
                     <h3>Refreshable Braille Display Demo</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr2wFIFft2w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Presenter using Braille display video" style="max-height: calc(60vh); max-width: calc(60vw)"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr2wFIFft2w" allow="autoplay; encrypted-media" allowfullscreen title="Presenter using Braille display video" style="max-height: calc(60vh); max-width: calc(60vw)"></iframe>
                     <aside class="notes">
                         <ol>
                             <li><p><b>Read:</b> Here is an example.  Though the person speaking is not deaf-blind, it does show her using a refreshable Braille display</p></li>
@@ -1350,7 +1396,7 @@
                 </section>
                 <section>
                     <h3>Speech Recognition</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7RHG_XiQ0ck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Voice Recognition Video"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7RHG_XiQ0ck" allow="autoplay; encrypted-media" allowfullscreen title="Voice Recognition Video"></iframe>
                     <aside class="notes">
                         Note what happens when the man using the sip and puff device tries to activate the Place Order button.  Any idea of why this didn't work?
                     </aside>
@@ -1360,10 +1406,10 @@
                     <h3>Keyboard Navigation</h3>
                     <ul>
                         <li><a href="https://webaim.org/" target="_blank">Skip to Content</a></li>
-                        <li><a href="http://hirerobplease.com/demos/wai/bad/survey.html"target="_blank">Focus order</a></li>
-                        <li><a href="http://hirerobplease.com/demos/wai/bad/survey.html"target="_blank">Focus highlight</a></li>
-                        <li><a href="demos/focus-context.html"target="_blank">Focus causes change in context</a></li>
-                        <li><a href="demos/keyboard-trap.html"target="_blank">Keyboard trap</a></li>
+                        <li><a href="http://hirerobplease.com/demos/wai/bad/survey.html" target="_blank">Focus order</a></li>
+                        <li><a href="http://hirerobplease.com/demos/wai/bad/survey.html" target="_blank">Focus highlight</a></li>
+                        <li><a href="demos/focus-context.html" target="_blank">Focus causes change in context</a></li>
+                        <li><a href="demos/keyboard-trap.html" target="_blank">Keyboard trap</a></li>
                     </ul>
                 </section>
             </section>
@@ -1435,7 +1481,7 @@
             </section>
         </div>
     </div>
-<footer class="logo" role="contentinfo">
+<footer class="logo">
     <a href="https://vt.edu"><img src="img/HorizontalStacked_RGB.svg" width="209" height="63" alt="Virginia Tech"></a>
 </footer>
 
@@ -1449,8 +1495,7 @@
             'css/reveal.css',
             'css/theme/white.css',
             'lib/css/zenburn.css',
-            'css/custom.css',
-            'lib/js/head.min.js'
+            'css/custom.css'
           ];
 
           //three JS files that need to be loaded one after the other
@@ -1474,7 +1519,7 @@
 
               //when successful, inject the next style
               linkTag.onload = function(e){
-                console.log("---> loaded: " + e.target.src);
+                console.log("---> loaded: " + e.target.href);
                 injectStyleFromStack();
               };
 
