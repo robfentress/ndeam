@@ -11,9 +11,11 @@
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
     <style>
-        .stretch, .max-wide {
+        .stretch,
+        .max-wide {
             max-width: 100%;
         }
+        
         .view-switch {
             /* display:none; */
         }
@@ -21,18 +23,18 @@
 </head>
 
 <body>
-<nav aria-label="View Options" class="view-switch no-print">
-    <a href="?uprocessed#/" class="unprocessed"><img src="img/clear-formatting.svg" style="height:1.5em; width:1.5em" alt="Clear formatting" title="Clear formatting" ></a>
-    <a href="." class="in-print"><img src="img/presentation.svg" alt="Presentation View" style="height:1.5em; width:1.5em"  title="Presentation View"></a>
-    <a href="?print-pdf&showNotes=separate-page#/"><img src="img/print.svg" alt="Print View" style="height:1.5em; width:1.5em"  title="Print View" class="in-pres"></a>
-</nav>
+    <nav aria-label="View Options" class="view-switch no-print">
+        <a href="?uprocessed#/" class="unprocessed"><img src="img/clear-formatting.svg" style="height:1.5em; width:1.5em" alt="Clear formatting" title="Clear formatting"></a>
+        <a href="." class="in-print"><img src="img/presentation.svg" alt="Presentation View" style="height:1.5em; width:1.5em" title="Presentation View"></a>
+        <a href="?print-pdf&showNotes=separate-page#/"><img src="img/print.svg" alt="Print View" style="height:1.5em; width:1.5em" title="Print View" class="in-pres"></a>
+    </nav>
     <div class="reveal" role="main">
         <div class="slides">
             <section>
                 <h1 class="small corner">Intro to Web Accessibility for Developers</h1>
 
                 <aside class="notes">
-                    <p><b>Read:</b> Hello.  Welcome.  In this session, I'm going to give you an introduction to accessibility designed for web developers.</p>
+                    <p><b>Read:</b> Hello. Welcome. In this session, I'm going to give you an introduction to accessibility designed for web developers.</p>
                 </aside>
             </section>
             <section>
@@ -43,7 +45,8 @@
                 </ul>
 
                 <aside class="notes">
-                    <p>My name is Robert Fentress, and I'm the Web Accessibility Solutions Designer in the Accessible Technologies group at Virginia Tech, where I provide guidance and training on web accessibility, perform accessibility reviews of university web sites and applications, and consult with groups on campus to help promote best practices as sites are developed or redesigned.</p>
+                    <p>My name is Robert Fentress, and I'm the Web Accessibility Solutions Designer in the Accessible Technologies group at Virginia Tech, where I provide guidance and training on web accessibility, perform accessibility reviews of university
+                        web sites and applications, and consult with groups on campus to help promote best practices as sites are developed or redesigned.</p>
                 </aside>
             </section>
             <section>
@@ -76,7 +79,7 @@
                 </blockquote>
 
                 <aside class="notes">
-                    <p><b>Read:</b> What is web accessibility?  Web accessibility is the practice of making websites usable for people of all abilities.</p>
+                    <p><b>Read:</b> What is web accessibility? Web accessibility is the practice of making websites usable for people of all abilities.</p>
                 </aside>
             </section>
 
@@ -104,27 +107,32 @@
 
                 <section>
                     <h2>The Virtue of Selfishness</h2>
-                    <div class="flex-grid half"><div class="col">
-                        <img src="img/ucda/ayn-rand.jpg" alt="Ayn Rand" class="max-wide">
-                        <footer class="ref fragment">
-                            <cite>Picture:
+                    <div class="flex-grid half">
+                        <div class="col">
+                            <img src="img/ucda/ayn-rand.jpg" alt="Ayn Rand" class="max-wide">
+                            <footer class="ref">
+                                <cite>Picture:
                                 <a href="http://literature.wikia.com">literature.wikia.com</a> /
                                 <a href="http://literature.wikia.com/wiki/File:1943AynRand.jpg">1943 photograph of Ayn Rand.</a> /
                                 <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
                             </cite>
-                        </footer>
+                            </footer>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li class="fragment">Well, maybe not exactly like that</li>
+                                <li class="fragment">Have you ever had...?</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col"><ul>
-                        <li class="fragment">Well, maybe not exactly like that</li>
-                        <li class="fragment">Have you ever had...?</li>
-                    </ul></div></div>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> But sometimes it is better to appeal to more selfish motives.  </li>
+                            <li><b>Read:</b> But sometimes it is better to appeal to more selfish motives. </li>
                             <li>Reveal next fragment.</li>
-                            <li><b>Read:</b> Well, maybe not exactly selfish in the Any Randian sense, <em>but</em>. . .  </li>
+                            <li><b>Read:</b> Well, maybe not exactly selfish in the Any Randian sense, <em>but</em>. . . </li>
                             <li>Reveal next fragment.</li>
-                            <li><b>Read:</b> Before I talk about the way people with disabilities access the web and the barriers they encounter, I want to ask some questions that I hope will show you that taking a more universal approach to design will benefit not just people with disabilities, but everyone in this room at some point, including you.  This is an approach to design that noted accessibility guru, <a href="http://adrianroselli.com/">Adrian Roselli</a>, calls <a href="http://adrianroselli.com/2015/03/slides-selfish-accessibility-for-avega.html">Selfish Accessibility</a>.</li>
+                            <li><b>Read:</b> Before I talk about the way people with disabilities access the web and the barriers they encounter, I want to ask some questions that I hope will show you that taking a more universal approach to design will benefit
+                                not just people with disabilities, but everyone in this room at some point, including you. This is an approach to design that noted accessibility guru, <a href="http://adrianroselli.com/">Adrian Roselli</a>, calls <a href="http://adrianroselli.com/2015/03/slides-selfish-accessibility-for-avega.html">Selfish Accessibility</a>.</li>
                         </ol>
 
                     </aside>
@@ -135,7 +143,7 @@
                     <aside class="notes">
                         <b>Read:</b> Have you ever had a broken wrist or carpal tunnel symptom?
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://www.flickr.com/photos/clango/">Peter Woodman</a> /
                         <a href="https://www.flickr.com/photos/clango/1075595449/in/photolist-2D3H48-5BiU45-frB35i-5sLNUF-5sLNVi-rHCE6-pu9j-tNab3-7jFTfT-4HvGaQ-oS5KU-7nYRo7-4FJH3G-dq2xjr-p27VuA-8RSvu7-o4MZ7S-6JmJJ2-pnmYKN-47GMEb-dPq8No-9bvuuX-XgNLTw-3dyAsC-4uLaas-7HBmmg-3oXPgE-dbh3pw-opX7Wr-hF5Bo9-87WXWb-dPjvgg-dD5YSQ-9ZeBKn-amiQUY-4NpBUM-djh5G1-3hBMLF-dG6rsT-dPtRJM-atmpCC-ABv39-P6vBFd-3hBMxT-fC7qvM-9kViV9-6dortD-r7k4Q-3oTgbP-dXZKMD/">my hand in a cast</a> /
                         <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>
@@ -147,7 +155,7 @@
                     <aside class="notes">
                         <b>Read:</b> Have you ever had to use the computer with a broken mouse?
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://www.pexels.com/@goumbik">Lukas</a> /
                         <a href="https://www.pexels.com/photo/person-near-apple-keyboard-and-cup-with-coffee-beans-1419929/">Person Near Apple Keyboard and Cup With Coffee Beans</a> /
                         <a href="https://www.pexels.com/photo-license/">Pexels License</a>
@@ -159,7 +167,7 @@
                     <aside class="notes">
                         <b>Read:</b> Have you ever had to use a computer or phone while holding a baby or carrying groceries?
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://www.flickr.com/photos/martinlabar/">Martin LaBar</a> /
                         <a href="https://www.flickr.com/photos/martinlabar/2278936071/in/photolist-7j67QJ-6ARCcr-4to9ie-yNw4A-kAHLQX-4L7TRT-6qW4mK-ecLEkx-AzsCi-38JtQk-9skw6G-bJb4Fx-Z4Pjes-bvghMA-GpeYd-bJbdqa-bJbe4k-By6wi-28yXwcw-JHAeoo-2bkEQ6C-iaKbF">Martin multitasking, holding grandson no. 2 while Flickring</a> /
                         <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>
@@ -171,7 +179,7 @@
                     <aside class="notes">
                         <b>Read:</b> Have you ever had to use your phone outside in bright sunlight?
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://www.pexels.com/@pixabay">Pixabay</a> /
                         <a href="https://www.pexels.com/photo/app-blur-business-cellular-301353/">app, blur, business</a> /
                         <a href="https://www.pexels.com/photo-license/">Pexels License</a>
@@ -183,7 +191,7 @@
                     <aside class="notes">
                         <b>Read:</b> Have you ever had to watch a video in the library or other public place and forgot to bring your headphones?
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://www.pexels.com/@gesel">Genaro Servín</a> /
                         <a href="https://www.pexels.com/photo/people-at-library-sitting-down-at-tables-757855/">People at Library Sitting Down at Tables</a> /
                         <a href="https://www.pexels.com/photo-license/">Pexels License</a>
@@ -195,7 +203,7 @@
                     <aside class="notes">
                         <b>Read:</b> Have you ever had to read something on your phone while driving?
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://www.pexels.com/@feelartfeelant">Acharaporn Kamornboonyarush</a> /
                         <a href="https://www.pexels.com/photo/person-holding-black-smartphone-and-vehicle-steering-wheel-1028742/">person holding black smartphone and vehicle steering wheel</a> /
                         <a href="https://www.pexels.com/photo-license/">Pexels License</a>
@@ -205,9 +213,10 @@
                     <h2>Tech support</h2>
                     <img src="img/ucda/tech-support.jpg" alt="Two elderly women and one younger one gathered around a computer" class="stretch">
                     <aside class="notes">
-                        <b>Read:</b> Are you the designated tech support for your parents?  Have you been to their house and noticed the text on their computer is magnified to 200% of its regular size?  Have you noticed that their television is turned up really loud?
+                        <b>Read:</b> Are you the designated tech support for your parents? Have you been to their house and noticed the text on their computer is magnified to 200% of its regular size? Have you noticed that their television is turned up
+                        really loud?
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://www.flickr.com/photos/mattring/">Matty Ring</a> /
                         <a href="https://www.flickr.com/photos/mattring/4282051194/in/photolist-nuaJ9i-jdGpEn-5rx3AA-AXoz64-CVtEaK-J4QcnB-JZKzV8-7woCCS-4R4JgR-c5haoG-peaTvK-JEPUNX">Gather around the computer</a> /
                         <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
@@ -217,9 +226,9 @@
                     <h2>That's you</h2>
                     <img src="img/ucda/old.jpeg" alt="Close up view of elderly person's head with hearing aid in ear" class="stretch">
                     <aside class="notes">
-                        <b>Read:</b> If so, that shouldn't come as a surprise.  50% of people 75 or older have disabilities. Since the average life expectancy in US is around 79 years old, you should consider that that'll be you eventually, if you're lucky.
+                        <b>Read:</b> If so, that shouldn't come as a surprise. 50% of people 75 or older have disabilities. Since the average life expectancy in US is around 79 years old, you should consider that that'll be you eventually, if you're lucky.
                     </aside>
-                    <footer class="ref fragment"><cite>Picture:
+                    <footer class="ref"><cite>Picture:
                         <a href="https://rawpixel.com">rawpixel.com</a> /
                         <a href="https://www.pexels.com/photo/person-wearing-hearing-aid-1251174/">person wearing hearing aid</a> /
                         <a href="https://www.pexels.com/photo-license/">Pexels License</a>
@@ -268,16 +277,19 @@
                     </ul>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> So I mentioned that accessibility is a legal requirement, but what are those laws?  There are many that touch upon accessibility, but the most relevant for our context are the following:</li>
+                            <li><b>Read:</b> So I mentioned that accessibility is a legal requirement, but what are those laws? There are many that touch upon accessibility, but the most relevant for our context are the following:</li>
                             <li>Reveal next fragment</li>
                             <li><b>Read:</b> First, the Rehabilitation Act of 1973, particularly Sections 504 and 508 of that act.</li>
                             <li>Reveal next fragment</li>
-                            <li>Section 504 prohibits programs and activities <strong>receiving Federal financial assistance</strong> from discriminating against individuals with disabilities.  <strong>All government agencies, federally-funded projects, K-12 schools, postsecondary entities</strong> (state colleges, universities, and vocational training schools) fall into this category.</li>
+                            <li>Section 504 prohibits programs and activities <strong>receiving Federal financial assistance</strong> from discriminating against individuals with disabilities. <strong>All government agencies, federally-funded projects, K-12 schools, postsecondary entities</strong>                                (state colleges, universities, and vocational training schools) fall into this category.</li>
                             <li>If people are interested, you can read directly the relevant parts of the law:
                                 <ol>
-                                    <li><blockquote>
-                                        29 U.S.C.§794, states: No otherwise qualified individual with a disability in the United States... shall, solely by reason of her or his disability, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.
-                                    </blockquote></li>
+                                    <li>
+                                        <blockquote>
+                                            29 U.S.C.§794, states: No otherwise qualified individual with a disability in the United States... shall, solely by reason of her or his disability, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under
+                                            any program or activity receiving Federal financial assistance.
+                                        </blockquote>
+                                    </li>
                                 </ol>
                             </li>
                             <li>Reveal next fragment</li>
@@ -291,24 +303,37 @@
                             <li>Reveal next fragment</li>
                             <li><b>Read:</b> The Americans with Disabilities Act (ADA) seeks to ensure equal access to programs, services, and activities for people with disabilities.
                                 <ol>
-                                    <li>Title II of the ADA generally requires that <strong>state and local governments</strong> provide qualified individuals with disabilities <strong>equal access</strong> to their <strong>programs, services, or activities</strong> unless doing so would fundamentally alter the nature of their programs, services, or activities or would impose an undue burden.  And in case you were wondering, that burden refers to the organization as a whole, in our case, Virginia Tech, rather than your individual department.
+                                    <li>Title II of the ADA generally requires that <strong>state and local governments</strong> provide qualified individuals with disabilities <strong>equal access</strong> to their <strong>programs, services, or activities</strong>                                        unless doing so would fundamentally alter the nature of their programs, services, or activities or would impose an undue burden. And in case you were wondering, that burden refers to the organization as a whole,
+                                        in our case, Virginia Tech, rather than your individual department.
                                         <ol>
                                             <li><strong>Title II covers state and local while Section 504 of Rehab Act only applies if an entity receives federal assistance</strong></li>
                                         </ol>
                                     </li>
-                                    <li><strong>Title III</strong> on the other hand applies to <strong>private entities</strong> and requires that <strong>places of public accommodation</strong> be accessible.  This is an evolving area of the law, but, in at least some cases, legal settlements suggest this applies to web sites.</li>
+                                    <li><strong>Title III</strong> on the other hand applies to <strong>private entities</strong> and requires that <strong>places of public accommodation</strong> be accessible. This is an evolving area of the law, but, in
+                                        at least some cases, legal settlements suggest this applies to web sites.</li>
                                 </ol>
                             </li>
                             <li>Reveal next fragment</li>
-                            <li><b>Read:</b> Depending on your country, state, or locality, there may be additional legal requirements.  For instance, in Virginia, the Information Technology Access Act, among other things, requires that state agencies ensure that any information technology they use be accessible to the blind and visually impaired.</li>
+                            <li><b>Read:</b> Depending on your country, state, or locality, there may be additional legal requirements. For instance, in Virginia, the Information Technology Access Act, among other things, requires that state agencies ensure
+                                that any information technology they use be accessible to the blind and visually impaired.</li>
                             <li>If people are interested, you can read directly the relevant parts of the law:
                                 <ol>
-                                    <li><blockquote>
-                                        <strong>§ 2.2-3502. Assurance of nonvisual access.:</strong> In general, the head of each covered entity shall ensure that information technology equipment and software used by blind or visually impaired employees, program participants, or members of the general public (i) provide access (including interactive use of the equipment and services) that is equivalent to that provided to individuals who are not blind or visually impaired; (ii) are designed to present information (including prompts used for interactive communications) in formats adaptable to both visual and nonvisual use; and (iii) have been purchased under a contract that includes the technology access clause required pursuant to § 2.2-3503.
-                                    </blockquote></li>
-                                    <li><blockquote>
-                                        <strong>§ 2.2-3503. Procurement requirements.: </strong>B. At a minimum, the nonvisual access standards shall include the following: (i) the effective, interactive control and use of the technology (including the operating system), applications programs, and format of the data presented, shall be readily achievable by nonvisual means; (ii) the technology equipped for nonvisual access shall be compatible with information technology used by other individuals with whom the blind or visually impaired individual interacts; (iii) nonvisual access technology shall be integrated into networks used to share communications among employees, program participants, and the public; and (iv) the technology for nonvisual access shall have the capability of providing equivalent access by nonvisual means to telecommunications or other interconnected network services used by persons who are not blind or visually impaired. A covered entity may stipulate additional specifications in any procurement.
-                                    </blockquote>
+                                    <li>
+                                        <blockquote>
+                                            <strong>§ 2.2-3502. Assurance of nonvisual access.:</strong> In general, the head of each covered entity shall ensure that information technology equipment and software used by blind or visually impaired employees,
+                                            program participants, or members of the general public (i) provide access (including interactive use of the equipment and services) that is equivalent to that provided to individuals who are not blind or visually
+                                            impaired; (ii) are designed to present information (including prompts used for interactive communications) in formats adaptable to both visual and nonvisual use; and (iii) have been purchased under a contract
+                                            that includes the technology access clause required pursuant to § 2.2-3503.
+                                        </blockquote>
+                                    </li>
+                                    <li>
+                                        <blockquote>
+                                            <strong>§ 2.2-3503. Procurement requirements.: </strong>B. At a minimum, the nonvisual access standards shall include the following: (i) the effective, interactive control and use of the technology (including
+                                            the operating system), applications programs, and format of the data presented, shall be readily achievable by nonvisual means; (ii) the technology equipped for nonvisual access shall be compatible with information
+                                            technology used by other individuals with whom the blind or visually impaired individual interacts; (iii) nonvisual access technology shall be integrated into networks used to share communications among employees,
+                                            program participants, and the public; and (iv) the technology for nonvisual access shall have the capability of providing equivalent access by nonvisual means to telecommunications or other interconnected network
+                                            services used by persons who are not blind or visually impaired. A covered entity may stipulate additional specifications in any procurement.
+                                        </blockquote>
                                     </li>
                                 </ol>
                             </li>
@@ -336,16 +361,20 @@
                             <li>Reveal next fragment, <b>WCAG 2.1</b>.</li>
                             <li><b>Read:</b> On June 5, 2018 WCAG 2.1 came out, which is a significant update to the standard, expanding provisions for <strong>mobile, low vision, and cognitive and learning disabilities</strong>.</li>
                             <li>Reveal next fragment, <b>WAI-ARIA.</b></li>
-                            <li>Web pages have become more complex over time, such that some of them function essentially like desktop applications.  The Web Accessibility Initiation-Accessible Rich Internet Application standard, sometimes referred to as WAI-ARIA, or Way-ARIA, or just plain ARIA.</li>
-                            <li>Accessibility of web content requires semantic information about widgets, structures, and behaviors, in order to allow assistive technologies to convey appropriate information to persons with disabilities. This specification provides an ontology of roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications. These semantics are <strong>designed to allow an author to properly convey user interface behaviors and structural information to assistive technologies in document-level markup</strong>.</li>
+                            <li>Web pages have become more complex over time, such that some of them function essentially like desktop applications. The Web Accessibility Initiation-Accessible Rich Internet Application standard, sometimes referred to as WAI-ARIA,
+                                or Way-ARIA, or just plain ARIA.</li>
+                            <li>Accessibility of web content requires semantic information about widgets, structures, and behaviors, in order to allow assistive technologies to convey appropriate information to persons with disabilities. This specification
+                                provides an ontology of roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications. These semantics are
+                                <strong>designed to allow an author to properly convey user interface behaviors and structural information to assistive technologies in document-level markup</strong>.</li>
                             <li>Reveal next fragment, <b>ATAG</b>.</li>
-                            <li><b>Read:</b>Beyond ensuring that web content is accessible, it is important that the tools used to create that content are, themselves, accessible, which is what the Accessible Tool Authoring Guidelines, abbreviated as ATAG, are designed to address.</li>
-                            <li>ATAG provides guidelines for designing web content <strong>authoring tools</strong> that are both more <strong>accessible</strong> to authors with disabilities (Part A) and designed to enable, support, and promote the <strong>production of more accessible web content</strong> by all authors (Part B).</li>
-                        </ul>
-                        <p></p>
+                            <li><b>Read:</b>Beyond ensuring that web content is accessible, it is important that the tools used to create that content are, themselves, accessible, which is what the Accessible Tool Authoring Guidelines, abbreviated as ATAG,
+                                are designed to address.</li>
+                            <li>ATAG provides guidelines for designing web content <strong>authoring tools</strong> that are both more <strong>accessible</strong> to authors with disabilities (Part A) and designed to enable, support, and promote the <strong>production of more accessible web content</strong>                                by all authors (Part B).</li>
+                            </ul>
+                            <p></p>
 
-                        <h3>ATAG</h3>
-                        <p>Provides guidelines for designing web content <strong>authoring tools</strong> that are both more <strong>accessible</strong> to authors with disabilities (Part A) and designed to enable, support, and promote the <strong>production of more accessible web content</strong> by all authors (Part B).</p>
+                            <h3>ATAG</h3>
+                            <p>Provides guidelines for designing web content <strong>authoring tools</strong> that are both more <strong>accessible</strong> to authors with disabilities (Part A) and designed to enable, support, and promote the <strong>production of more accessible web content</strong>                                by all authors (Part B).</p>
 
                     </aside>
                 </section>
@@ -376,21 +405,27 @@
                             <li><b>Operable:</b> User interface components and navigation must be operable.</li>
                             <li><b>Understandable:</b> Information and the operation of user interface must be understandable.</li>
                             <li><b>Robust:</b> Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.</li>
-                        </ul>
+                            </ul>
                     </aside>
                 </section>
                 <section>
                     <h2><a href="https://www.w3.org/WAI/WCAG21/quickref">WCAG Example</a></h2>
                     <ul class="smaller">
-                        <li class="fragment"><p><b><span class="acronym">Principle</span> 1 – Perceivable:</b> Information and user interface components must be presentable to users in ways they can perceive.</p></li>
-                        <li class="fragment"><p><b><span class="acronym">Guideline</span> 1.3 – Adaptable:</b> Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p></li>
-                        <li class="fragment"><p><b><span class="acronym">Success Criterion</span> 1.3.1 – Info and Relationships (Level A):</b> Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p></li>
+                        <li class="fragment">
+                            <p><b><span class="acronym">Principle</span> 1 – Perceivable:</b> Information and user interface components must be presentable to users in ways they can perceive.</p>
+                        </li>
+                        <li class="fragment">
+                            <p><b><span class="acronym">Guideline</span> 1.3 – Adaptable:</b> Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
+                        </li>
+                        <li class="fragment">
+                            <p><b><span class="acronym">Success Criterion</span> 1.3.1 – Info and Relationships (Level A):</b> Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in
+                                text.</p>
+                        </li>
                     </ul>
                     <aside class="notes">
-                        Here is an example of the hierarchy of Principles, Guidelines, and Success Criteria.
-                        The Principle is that users must be able to perceive things.
-                        A Guideline within that principle is that the user should be able adapt the content so it can be viewed in different ways
-                        And a specific Success Criterion is that the content be structured using appropriate semantic elements so that the information about and relationships between elements on the page don't depend on specific sensory and physical abilities in order to perceive.
+                        Here is an example of the hierarchy of Principles, Guidelines, and Success Criteria. The Principle is that users must be able to perceive things. A Guideline within that principle is that the user should be able adapt the content so it can be viewed in
+                        different ways And a specific Success Criterion is that the content be structured using appropriate semantic elements so that the information about and relationships between elements on the page don't depend on specific sensory
+                        and physical abilities in order to perceive.
                     </aside>
                 </section>
             </section>
@@ -468,15 +503,15 @@
                 <section>
                     <h2>What's going on?</h2>
                     <iframe title="Just Audio" width="560" height="315" src="https://www.youtube.com/embed/mrxO-XlgQ1k" allow="autoplay; encrypted-media" allowfullscreen class="stretch" aria-describedby="nodesc"></iframe>
-                    <div style="display:none" id="nodesc">No audio descriptions intentionally.  Audio-described version is under section with the heading "Better?"</div>
+                    <div style="display:none" id="nodesc">No audio descriptions intentionally. Audio-described version is under section with the heading "Better?"</div>
                     <aside class="notes">
                         <ol>
                             <li><b>Read:</b> People with disabilities are neither victims nor heroes, but being aware of the diversity of your audience can help you design digital materials that convey your message effectively to the broadest range of users.</li>
-                            <li><b>Read:</b> I'm going to play a scene from a TV show, and I want you to see if you can figure out what is going on.  Extra credit goes to anyone who can tell me who the boy in the scene grows up to become.</li>
+                            <li><b>Read:</b> I'm going to play a scene from a TV show, and I want you to see if you can figure out what is going on. Extra credit goes to anyone who can tell me who the boy in the scene grows up to become.</li>
                             <li>Play the video.</li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>“Into the Ring.” Daredevil, season 1, episode 1, Netflix, 10 Apr. 2015. Netflix, www.netflix.com/watch/80018191</cite></footer>
+                    <footer class="ref"><cite>“Into the Ring.” Daredevil, season 1, episode 1, Netflix, 10 Apr. 2015. Netflix, www.netflix.com/watch/80018191</cite></footer>
                 </section>
 
                 <section>
@@ -484,13 +519,13 @@
                     <iframe title="Audio and Video" width="560" height="315" src="https://www.youtube.com/embed/rqoZwql_tWs" allow="autoplay; encrypted-media" allowfullscreen class="stretch" aria-describedby="nodesc"></iframe>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> Now I'm going to play the scene again with the video enabled.  I want you to tell me what important information was left out by not being able to see what was going on.</li>
-                            <li>Play the video up until we see the toxic barrels of liquid.  Explain that we would have missed that the spill from the toxic barrels was the cause of his blindness.</li>
-                            <li><b>Read:</b> Why is this important?  Who is this boy? </li>
-                            <li>Read: This is important because the boy grows up to be the crusading lawyer and superhero, Daredevil, who always fights for the little guy against the powerful.  Thus, a central arc in the character's life would be missing.</li>
+                            <li><b>Read:</b> Now I'm going to play the scene again with the video enabled. I want you to tell me what important information was left out by not being able to see what was going on.</li>
+                            <li>Play the video up until we see the toxic barrels of liquid. Explain that we would have missed that the spill from the toxic barrels was the cause of his blindness.</li>
+                            <li><b>Read:</b> Why is this important? Who is this boy? </li>
+                            <li>Read: This is important because the boy grows up to be the crusading lawyer and superhero, Daredevil, who always fights for the little guy against the powerful. Thus, a central arc in the character's life would be missing.</li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>“Into the Ring.” Daredevil, season 1, episode 1, Netflix, 10 Apr. 2015. Netflix, www.netflix.com/watch/80018191</cite></footer>
+                    <footer class="ref"><cite>“Into the Ring.” Daredevil, season 1, episode 1, Netflix, 10 Apr. 2015. Netflix, www.netflix.com/watch/80018191</cite></footer>
                 </section>
 
                 <section>
@@ -498,12 +533,13 @@
                     <iframe title="Audio Described" width="560" height="315" src="https://www.youtube.com/embed/2k6YymIDGu4" allow="autoplay; encrypted-media" allowfullscreen class="stretch"></iframe>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> How would you communicate that information to someone who is blind?  Let's find out!</li>
+                            <li><b>Read:</b> How would you communicate that information to someone who is blind? Let's find out!</li>
                             <li>Play video until we come to part where the toxic barrels are described.</li>
-                            <li>Explain that these explanations of what is going on visually are called audio descriptions, descriptions, or descriptive video, and they are, technically, a WCAG requirement.  Netflix recently got in trouble for not having them, and so you'll notice that many of their videos now have these as a separately-enablably track, sort of like closed captions.</li>
+                            <li>Explain that these explanations of what is going on visually are called audio descriptions, descriptions, or descriptive video, and they are, technically, a WCAG requirement. Netflix recently got in trouble for not having them,
+                                and so you'll notice that many of their videos now have these as a separately-enablably track, sort of like closed captions.</li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>“Into the Ring.” Daredevil, season 1, episode 1, Netflix, 10 Apr. 2015. Netflix, www.netflix.com/watch/80018191</cite></footer>
+                    <footer class="ref"><cite>“Into the Ring.” Daredevil, season 1, episode 1, Netflix, 10 Apr. 2015. Netflix, www.netflix.com/watch/80018191</cite></footer>
                 </section>
 
                 <section>
@@ -526,24 +562,25 @@
                     <aside class="notes">
                         <ol>
                             <li><b>Read:</b> Earlier I mentioned that completely blind people will usually use screen reading software to read things on their computers.</li>
-                            <li><b>Read:</b> I'm going to play a video of the JAWS screen reader in action, so you can get a sense of things.  This example is actually of the software reading a Word document, but the experience is much the same for a web page.</li>
+                            <li><b>Read:</b> I'm going to play a video of the JAWS screen reader in action, so you can get a sense of things. This example is actually of the software reading a Word document, but the experience is much the same for a web page.</li>
                             <li><b>Read:</b> I want you to note the other information that is spoken aside from just the visible text.</li>
                             <li>Play the video.</li>
-                            <li>They should answer that it tells the user whether something was a link, whether it was a heading and at what level, whether the user is in a bulleted list, and a description of images.  If not, point these out to them</li>
+                            <li>They should answer that it tells the user whether something was a link, whether it was a heading and at what level, whether the user is in a bulleted list, and a description of images. If not, point these out to them</li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>Karen Sorensen. "Screen reader example" Online video clip. YouTube, 13 December 2011. Web. 9 October 2018.</cite></footer>
+                    <footer class="ref"><cite>Karen Sorensen. "Screen reader example" Online video clip. YouTube, 13 December 2011. Web. 9 October 2018.</cite></footer>
                 </section>
 
                 <section>
                     <h2>Do you see what I see?</h2>
-                    <div class="fragment"><p>This is what a blind person "sees" unless you provide a text alternative</p>
-                    <img src="img/noalt.png" alt="broken image icon" width="392" height="133"  /></div>
+                    <div class="fragment">
+                        <p>This is what a blind person "sees" unless you provide a text alternative</p>
+                        <img src="img/noalt.png" alt="broken image icon" width="392" height="133" /></div>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> What happens when a screen reader user encounters an image?  </li>
+                            <li><b>Read:</b> What happens when a screen reader user encounters an image? </li>
                             <li>Reveal next fragment</li>
-                            <li><b>Read:</b> Unless a text alternative is provided, not much.  It simply announces that there is one and perhaps the filename.  This, of course, is not what we want.</li>
+                            <li><b>Read:</b> Unless a text alternative is provided, not much. It simply announces that there is one and perhaps the filename. This, of course, is not what we want.</li>
                         </ol>
                     </aside>
                 </section>
@@ -556,9 +593,9 @@
                     </div>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> What we want is for the screen reader to say what the picture is of.  Fortunately, this is easy enough to code.  </li>
+                            <li><b>Read:</b> What we want is for the screen reader to say what the picture is of. Fortunately, this is easy enough to code. </li>
                             <li>Reveal next fragment</li>
-                            <li><b>Read:</b> We simply add an alt attribute to the img tag  and set, as its value, a description of the image.</li>
+                            <li><b>Read:</b> We simply add an alt attribute to the img tag and set, as its value, a description of the image.</li>
                         </ol>
 
                         <blockquote>Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities.
@@ -569,20 +606,25 @@
 
                 <section>
                     <h2><a href="https://www.w3.org/WAI/tutorials/images/" target="_blank">WAI Image concepts tutorial</a></h2>
-                    <div class="left"><ul>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/informative/">Informative images</a></li>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/decorative/">Decorative images</a></li>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/functional/">Functional images</a></li>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/textual/">Images of text</a></li>
-                    </ul></div>
-                    <div class="right"><ul>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/complex/">Complex images</a></li>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/groups/">Groups of images</a></li>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/imagemap/">Image maps</a></li>
-                        <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" target="_blank">An alt decision tree</a></li>
-                    </ul></div>
+                    <div class="left">
+                        <ul>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/informative/">Informative images</a></li>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/decorative/">Decorative images</a></li>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/functional/">Functional images</a></li>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/textual/">Images of text</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/complex/">Complex images</a></li>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/groups/">Groups of images</a></li>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/imagemap/">Image maps</a></li>
+                            <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" target="_blank">An alt decision tree</a></li>
+                        </ul>
+                    </div>
                     <aside class="notes">
-                        <b>Read:</b> There are many other issues around providing alternative text, such what to do if the image is purely decorative and shouldn't be spoken, and how to describe very complex images.  The Web Accessibility Initiative provides guidance that I've linked to here.
+                        <b>Read:</b> There are many other issues around providing alternative text, such what to do if the image is purely decorative and shouldn't be spoken, and how to describe very complex images. The Web Accessibility Initiative provides
+                        guidance that I've linked to here.
                     </aside>
                 </section>
 
@@ -606,20 +648,24 @@
 &lt;/a&gt;</code></pre></div>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> Because screen reader users can navigate by jumping from link to link using a key command, it is important that the text of any links describes their purpose.  For instance, where the link takes the user or the name of the document that would be downloaded.  This saves these users time by letting them quickly navigate to where they need to go.  </li>
+                            <li><b>Read:</b> Because screen reader users can navigate by jumping from link to link using a key command, it is important that the text of any links describes their purpose. For instance, where the link takes the user or the
+                                name of the document that would be downloaded. This saves these users time by letting them quickly navigate to where they need to go. </li>
                             <li>Reveal the first fragment</li>
-                            <li><b>Read:</b> However, if the links contain more generic text, such as "Read more", especially if there are multiple "Read more" links, this affordance is less useful.  </li>
+                            <li><b>Read:</b> However, if the links contain more generic text, such as "Read more", especially if there are multiple "Read more" links, this affordance is less useful. </li>
                             <li>Reveal the next fragment</li>
                             <li><b>Read:</b> Rather than saying "read more" or "click here", it is better for the link text to say "read more <em>about</em> x"</li>
                             <li>Reveal the next fragment</li>
-                            <li><b>Read:</b> This same principle is at play when an image is the only content of a link.  Usually, the text alternative for an image should be a description of the image.  However, if you did that in this case, the text that would be spoken would be the image's alt text, which often will not describe the link's purpose.  </li>
+                            <li><b>Read:</b> This same principle is at play when an image is the only content of a link. Usually, the text alternative for an image should be a description of the image. However, if you did that in this case, the text that
+                                would be spoken would be the image's alt text, which often will not describe the link's purpose. </li>
                             <li>Reveal the next fragment</li>
-                            <li>Therefore, in those instance, you can change the alt text to describe the purpose of the link.  </li>
+                            <li>Therefore, in those instance, you can change the alt text to describe the purpose of the link. </li>
                             <li>Reveal the next fragment</li>
-                            <li>Alternately, you could set the image's alt attribute to the empty string, which causes it to be ignored by screen readers, and then provide additional text that is visually hidden but spoken by the screen reader, which descripbes the link's purpose.</li>
+                            <li>Alternately, you could set the image's alt attribute to the empty string, which causes it to be ignored by screen readers, and then provide additional text that is visually hidden but spoken by the screen reader, which descripbes
+                                the link's purpose.</li>
                         </ol>
                         <h3>Reference</h3>
-                        <blockquote><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">2.4.4</a> Link Purpose (In Context):</strong> The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)</blockquote>
+                        <blockquote><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">2.4.4</a> Link Purpose (In Context):</strong> The purpose of each link can be determined from the link text alone or
+                            from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)</blockquote>
                     </aside>
                 </section>
 
@@ -640,7 +686,8 @@
                             <li>You may have noticed a number of new elements in HTML5 whose purpose you were uncertain of, since they appear to have no effect on the appearance or functionality of the page.</li>
                             <li>Among these are * header, * nav, * main, * aside, * section, and * footer, and they are considered landmark regions.</li>
                             <li>Although they may not have a visual effect on their own, "Landmarks provide a powerful way to identify the organization and structure of a web page." </li>
-                            <li>This structure can be defined using the tags I mentioned, or by adding the role attribute to any tag and assigning one of the values that correspond to those aforementioned sectioning tags.  You can see those roles in the code listing.</li>
+                            <li>This structure can be defined using the tags I mentioned, or by adding the role attribute to any tag and assigning one of the values that correspond to those aforementioned sectioning tags. You can see those roles in the code
+                                listing.</li>
                             <li>Some roles do not have a corresponding HTML5 sectioning element, such as "search". In that case we can just add the role to a div, like this *.</li>
                             <li>"The use of landmarks roles support keyboard navigation to the structure of a web page for screen reader users, and can be used as targets for author supplied 'skip links' and browser extensions for enhanced keyboard navigation."</li>
                             <li>You should "provide labels to distinguish two page regions of the same type, such as “main navigation” and “sub-navigation” menus using a NAV element on the same page"</li>
@@ -681,40 +728,31 @@
                         <ol>
                             <li>Reveal the first heading, <b>Headings Non-Example</b>.</li>
                             <li>Follow the link to the <a href="http://hirerobplease.com/demos/wai/bad/news.html">Headings Non-Example</a> page.</li>
-                            <li>Ask the question of how quickly a person without a vision impairment could get a sense
-                                of what the news of the day was.
+                            <li>Ask the question of how quickly a person without a vision impairment could get a sense of what the news of the day was.
                             </li>
-                            <li>Explain that, unless the page is coded in an accessible way, a blind person would need
-                                to have their screen reader read line by line through much of the page to get the same
-                                sense of things that a sighted person could just by quickly scanning the headings.
+                            <li>Explain that, unless the page is coded in an accessible way, a blind person would need to have their screen reader read line by line through much of the page to get the same sense of things that a sighted person could just
+                                by quickly scanning the headings.
                             </li>
                             <li>Go back to the slide and show the code under <b>Headings Non-Example</b>.</li>
-                            <li>Point out that the developer presented the text as headings to sighted users by making
-                                it bold and big.
+                            <li>Point out that the developer presented the text as headings to sighted users by making it bold and big.
                             </li>
-                            <li>Explain that, if he or she had indicated semantically what was a heading and what level
-                                heading it was, that the same affordance could be provided to all users.
+                            <li>Explain that, if he or she had indicated semantically what was a heading and what level heading it was, that the same affordance could be provided to all users.
                             </li>
                             <li>Reveal the next heading on the side, <b>Headings Example</b>.</li>
                             <li>Follow the link to the <a href="http://hirerobplease.com/demos/wai/after/news.html">Headings Example</a> page.</li>
                             <li>Turn on VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
                             <li>Bring up the Web Rotor (<kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>U</kbd>).</li>
                             <li>Press <kbd>Right</kbd> until the list of headings is shown.</li>
-                            <li>Press the <kbd>Down</kbd> to surface the headings, pointing out that the level of the
-                                headings is also indicated.
+                            <li>Press the <kbd>Down</kbd> to surface the headings, pointing out that the level of the headings is also indicated.
                             </li>
-                            <li>When you get to the heading <b>Man Gets Nine Months in Violin Case</b> press <kbd>Enter</kbd> or <kbd>Return</kbd> to
-                                demonstrate that this affordance lets the user jump imediately to the relevant part of
-                                the page.
+                            <li>When you get to the heading <b>Man Gets Nine Months in Violin Case</b> press <kbd>Enter</kbd> or <kbd>Return</kbd> to demonstrate that this affordance lets the user jump imediately to the relevant part of the page.
                             </li>
                             <li>Switch back to the slide and show the example code under <b>Headings Example</b>.</li>
                             <li>Point out that this was accomplished by using the heading tags.</li>
                         </ol>
                         <h4>Reference</h4>
-                        <blockquote>Headings communicate the organization of the content on the page. Web
-                            browsers, plug-ins, and assistive technologies can use them to provide in-page navigation...<br>
-                            Nest headings by their rank (or level)...<br>
-                            Main heading can be before or after navigation.
+                        <blockquote>Headings communicate the organization of the content on the page. Web browsers, plug-ins, and assistive technologies can use them to provide in-page navigation...<br> Nest headings by their rank (or level)...<br> Main heading can
+                            be before or after navigation.
                             <footer><cite><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">Page Structure Tutorial: Headings</a></cite></footer>
                         </blockquote>
                     </aside>
@@ -734,32 +772,27 @@
                     <aside class="notes">
                         <ol>
                             <li>Follow link to Table Non-example. </li>
-                            <li>Point out that there are column and row headers demonstrated visually by being bolded. This helps sighted users in understanding the
-                            table. </li>
+                            <li>Point out that there are column and row headers demonstrated visually by being bolded. This helps sighted users in understanding the table. </li>
                             <li>Turn on VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
-                            <li>Using <kbd>Control</kbd>+<kbd>Option</kbd>+Arrow keys, navigate from the <b>Windows</b> header cell down to
-                            the <b>Ease of Access : Magnifier</b> cell and ask everyone how a blind user would know what row
-                            header that cell was associated with</li>
+                            <li>Using <kbd>Control</kbd>+<kbd>Option</kbd>+Arrow keys, navigate from the <b>Windows</b> header cell down to the <b>Ease of Access : Magnifier</b> cell and ask everyone how a blind user would know what row header that cell was
+                                associated with</li>
                             <li>Turn off VO (<kbd>Command</kbd>+<kbd>F5</kbd>)</li>
-                            <li>Explain that they would have to move to the start of
-                            the row to find out, because, even though that first cell looks like a row header because it
-                            is styled to be bold, it is semantically just
-                            a cell like any other as can be seen by examining the HTML.</li>
+                            <li>Explain that they would have to move to the start of the row to find out, because, even though that first cell looks like a row header because it is styled to be bold, it is semantically just a cell like any other as can be
+                                seen by examining the HTML.</li>
                             <li>Right-click on the Magnification cell and choose Inspect to bring up the Inspector.</li>
                             <li>Point out that the <code>&lt;b&gt;</code> tag is used</li>
-                            <li>Explain that in order to provide the same affordance that sighted users have when navigating a table, we must
-                                semantically, rather than just visually, indicate that that cell is to serve as a row.</li>
+                            <li>Explain that in order to provide the same affordance that sighted users have when navigating a table, we must semantically, rather than just visually, indicate that that cell is to serve as a row.</li>
                             <li>Return to slide</li>
                             <li>Follow link to Table Example. </li>
                             <li>Right-click on the Magnification cell and choose Inspect to bring up the Inspector.</li>
                             <li>Point out that the cell now uses a <code>&lt;th&gt;</code> tag rather than a td tag indicating that it is a table header.</li>
                             <li>Also point out that the <code>&lt;th&gt;</code> tag has a scope attribute set to row.</li>
                             <li>Turn on VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
-                            <li>Using <kbd>Control</kbd>+<kbd>Option</kbd>+Arrow keys, navigate from the <b>Windows</b> header cell down to
-                                the <b>Ease of Access : Magnifier</b> cell and point out that the row header is announced before the table data</li>
+                            <li>Using <kbd>Control</kbd>+<kbd>Option</kbd>+Arrow keys, navigate from the <b>Windows</b> header cell down to the <b>Ease of Access : Magnifier</b> cell and point out that the row header is announced before the table data</li>
                             <li>Turn off VO (<kbd>Command</kbd>+<kbd>F5</kbd>)</li>
                             <li>Right-click on the caption, <b>Assistive Technology Matrix</b>, and choose <b>Inspect</b> to bring up the Inspector.</li>
-                            <li>Point out that the table now has a <code>&lt;caption&gt;</code> tag, which means that, if there were multiple tables on a page, the user could bring up a list of them out of context see what they were about at a glance and jump to them directly.</li>
+                            <li>Point out that the table now has a <code>&lt;caption&gt;</code> tag, which means that, if there were multiple tables on a page, the user could bring up a list of them out of context see what they were about at a glance and
+                                jump to them directly.</li>
                             <li>Turn on VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
                             <li>Bring up the Web Rotor (<kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>U</kbd>).</li>
                             <li>Press <kbd>Right</kbd> until the list of tables is shown.</li>
@@ -768,15 +801,8 @@
                         </ol>
 
                         <h4>Reference</h4>
-                        <blockquote>Data tables are used to organize data with a logical relationship in grids. Accessible
-                            tables
-                            need HTML markup that indicates header cells and data cells and defines their
-                            relationship.
-                            Assistive technologies use this information to provide context to users. Header cells
-                            must be
-                            marked up with TH, and data cells with TD to make tables accessible. For more complex
-                            tables,
-                            explicit associations may be needed using scope, id, and headers attributes.
+                        <blockquote>Data tables are used to organize data with a logical relationship in grids. Accessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information
+                            to provide context to users. Header cells must be marked up with TH, and data cells with TD to make tables accessible. For more complex tables, explicit associations may be needed using scope, id, and headers attributes.
                             <footer><cite><a href="https://www.w3.org/WAI/tutorials/tables/">Tables Concepts</a></cite></footer>
                         </blockquote>
 
@@ -790,7 +816,8 @@
                         <pre><code class="html hljs">&lt;head&gt;&lt;title&gt;My presentation&lt;/title&gt;&lt;/head&gt;</code></pre>
                     </div>
                     <aside class="notes">
-                        <p>When a page loads, the first thing that is voiced is the title of the page, which provides an important cue as to whether they are on the page they want to be on.  If it is missing, screen reader users would have to scan the page to get a sense of what the page is about.</p>
+                        <p>When a page loads, the first thing that is voiced is the title of the page, which provides an important cue as to whether they are on the page they want to be on. If it is missing, screen reader users would have to scan the page
+                            to get a sense of what the page is about.</p>
 
                         <h3>Reference</h3>
                         <blockquote>Web pages have titles that describe topic or purpose.
@@ -815,7 +842,7 @@
                         </div>
                     </div>
                     <div class="fragment">
-                        <h3 >Language Demos</h3>
+                        <h3>Language Demos</h3>
                         <ul>
                             <li><a href="https://www.washington.edu/accesscomputing/AU/before.html">Inaccessible University Page</a></li>
                             <li><a href="https://www.washington.edu/accesscomputing/AU/after.htmll">Accessible University Page</a></li>
@@ -852,7 +879,8 @@
                         <blockquote>The default human language of each Web page can be programmatically determined
                             <footer><cite><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">WCAG SC 3.1.1</a></cite></footer>
                         </blockquote>
-                        <blockquote>The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
+                        <blockquote>The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular
+                            of the immediately surrounding text.
                             <footer><cite><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html">WCAG SC 3.1.2</a></cite></footer>
                         </blockquote>
                     </aside>
@@ -863,24 +891,31 @@
                     <ul>
                         <li><a href="http://hirerobplease.com/demos/wai/bad/home.html" target="_blank">What is wrong
                         with this?</a>
-                            <ul><li class="fragment">Code order should match visual presentation (usually)</li></ul>
+                            <ul>
+                                <li class="fragment">Code order should match visual presentation (usually)</li>
+                            </ul>
                         </li>
 
 
-                        <li class="fragment"><a href="http://hirerobplease.com/demos/wai/good/home.html" target="_blank">Better reading order</a></li></ul>
+                        <li class="fragment"><a href="http://hirerobplease.com/demos/wai/good/home.html" target="_blank">Better reading order</a></li>
+                    </ul>
 
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> Screen readers will generally read the content on the page in the order it appears in the HTML.  Usually this makes sense, but in some cases the order suggested by the way the page looks doesn't match the order in the code.  Let me show you an example.</li>
+                            <li><b>Read:</b> Screen readers will generally read the content on the page in the order it appears in the HTML. Usually this makes sense, but in some cases the order suggested by the way the page looks doesn't match the order
+                                in the code. Let me show you an example.</li>
                             <li>Follow link to <a href="http://hirerobplease.com/demos/wai/bad/home.html" target="_blank">What is wrong with this?</a></li>
-                            <li><b>Read:</b> A user of the screen reader VoiceOver may read through the page essentially one line at a time by pressing <kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>Right</kbd>.  If we do that here, listen to what happens when we get to the list of articles.</li>
+                            <li><b>Read:</b> A user of the screen reader VoiceOver may read through the page essentially one line at a time by pressing <kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>Right</kbd>. If we do that here, listen to what happens when
+                                we get to the list of articles.</li>
                             <li>Use <kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>Right</kbd> to read through the list of articles.</li>
-                            <li><b>Read:</b> Notice how the screen reader didn't read things based on the columnar layout.  Why do you suppose that is</li>
+                            <li><b>Read:</b> Notice how the screen reader didn't read things based on the columnar layout. Why do you suppose that is</li>
                             <li>Right-click on the heading, <b>Heat wave linked to temperatures</b>, and choose <b>Inspect</b> to bring up the Inspector.</li>
-                            <li><b>Read:</b> Notice here how the person who coded the page placed all of the titles of the articles in a div with the class, <b>newsbar</b>. This styling made the titles appear in a sort of row.  The screen reader doesn't know that the content is visually organized in columns and that the title of the article should be read first, followed by the alt text for the pictures, and then the extract of the story.  Instead, it just reads content as it appears in the code, which in this case doesn't match the visual presentation.</li>
+                            <li><b>Read:</b> Notice here how the person who coded the page placed all of the titles of the articles in a div with the class, <b>newsbar</b>. This styling made the titles appear in a sort of row. The screen reader doesn't know
+                                that the content is visually organized in columns and that the title of the article should be read first, followed by the alt text for the pictures, and then the extract of the story. Instead, it just reads content as it
+                                appears in the code, which in this case doesn't match the visual presentation.</li>
                             <li>Go back to the slide</li>
                             <li>Reveal the next fragment</li>
-                            <li><b>Read:</b> So the lesson here is that the order of content in the HTML should match the order things should be read based on the visual presentation.  Or if it is not exactly the same, it should still make sense.</li>
+                            <li><b>Read:</b> So the lesson here is that the order of content in the HTML should match the order things should be read based on the visual presentation. Or if it is not exactly the same, it should still make sense.</li>
                             <li>Reveal the next fragment</li>
                             <li><b>Read:</b> Let's look at one way you could fix this.</li>
                             <li>Follow link to <a href="http://hirerobplease.com/demos/wai/good/home.html" target="_blank">Better reading order</a></li>
@@ -930,15 +965,11 @@
                             </li>
                             <li>Turn off VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
 
-                            <li>Right-click on the field below <b>Name:</b>, and choose <b>Inspect</b> to
-                                bring up the Inspector.
+                            <li>Right-click on the field below <b>Name:</b>, and choose <b>Inspect</b> to bring up the Inspector.
                             </li>
-                            <li><b>Read:</b> While there is a label that appears near the field, there is nothing
-                                programmatically linking the two. This is why VoiceOver just indicated there
-                                was a field there and not what the field was for.
+                            <li><b>Read:</b> While there is a label that appears near the field, there is nothing programmatically linking the two. This is why VoiceOver just indicated there was a field there and not what the field was for.
                             </li>
-                            <li>Also point out that the form relies on color cues to indicate what are
-                                required fields, which is not helpful if you are blind or colorblind.
+                            <li>Also point out that the form relies on color cues to indicate what are required fields, which is not helpful if you are blind or colorblind.
                             </li>
 
                             <li>Turn on VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
@@ -946,14 +977,12 @@
                             </li>
                             <li>Press <kbd>Right</kbd> until the list of Buttons is shown.</li>
                             <li>Press <kbd>Down</kbd> until you get to the <b>Submit</b> button and press
-                                <kbd>Enter</kbd> or <kbd>Return</kbd> to
-                                navigate to the button.
+                                <kbd>Enter</kbd> or <kbd>Return</kbd> to navigate to the button.
                             </li>
                             <li>Ask participants to attend to what happens visually when you submit the form
                                 <i>and</i> what is voiced by the screen reader.
                             </li>
-                            <li>Press <kbd>Enter</kbd> or <kbd>Return</kbd> to submit form without inputting
-                                anything.
+                            <li>Press <kbd>Enter</kbd> or <kbd>Return</kbd> to submit form without inputting anything.
                             </li>
                             <li>Point out that error message that shows up is not voiced.</li>
                             <li>Turn off VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
@@ -968,57 +997,35 @@
                                     Example</a> page
                             </li>
 
-                            <li>Point out that rather than use color to indicate what fields are required,
-                                the fact
-                                that they are required is now an integral visible part of the field label.
+                            <li>Point out that rather than use color to indicate what fields are required, the fact that they are required is now an integral visible part of the field label.
                             </li>
 
                             <li>Turn on VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
                             <li>Bring up the Web Rotor (<kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>U</kbd>).
                             </li>
                             <li>Press <kbd>Right</kbd> until the list of form controls is shown.</li>
-                            <li>Point out that fields are now labeled and the fact that certain fields are
-                                required
-                                is indicated as well.
+                            <li>Point out that fields are now labeled and the fact that certain fields are required is indicated as well.
                             </li>
                             <li>Press <kbd>Right</kbd> until the list of Buttons is shown.</li>
-                            <li>Press <kbd>Down</kbd> until you get to the <b>Submit</b> button and press enter to
-                                navigate
-                                to the button.
+                            <li>Press <kbd>Down</kbd> until you get to the <b>Submit</b> button and press enter to navigate to the button.
                             </li>
                             <li>Submit form and point out that focus now shifts to <b>Name</b> field.</li>
                             <li>Turn off VoiceOver (<kbd>Command</kbd>+<kbd>F5</kbd>).</li>
 
-                            <li>Right-click on the field below <b>Name</b>, and choose <b>Inspect</b> to
-                                bring up
-                                the Inspector.
+                            <li>Right-click on the field below <b>Name</b>, and choose <b>Inspect</b> to bring up the Inspector.
                             </li>
-                            <li><b>Read:</b> here is a <code>&lt;label&gt;</code> tag now and it is associated with
-                                its
-                                related field because its <code>for</code> attribute points to the
-                                <code>id</code>
-                                attribute of the field. This is why the label was shown in the list of form
-                                controls
-                                in VO.
+                            <li><b>Read:</b> here is a <code>&lt;label&gt;</code> tag now and it is associated with its related field because its <code>for</code> attribute points to the
+                                <code>id</code> attribute of the field. This is why the label was shown in the list of form controls in VO.
                             </li>
-                            <li><b>Read:</b> There is also a required attribute. Because of this, the screen reader
-                                will
-                                announce to the user when he or she encounters this field that it is
-                                required. This
-                                is also what causes focus to be shifted to the field when the form is
-                                submitted
-                                without anything being entered.
+                            <li><b>Read:</b> There is also a required attribute. Because of this, the screen reader will announce to the user when he or she encounters this field that it is required. This is also what causes focus to be shifted to the field
+                                when the form is submitted without anything being entered.
                             </li>
                             <li>Depending on time, you could also fill in the <b>Name</b>, <b>Email</b> and
-                                <b>CAPTCHA</b>
-                                fields and submit the form, pointing out the voicing of the alert because
-                                the div
-                                with the message had <code>role="alert"</code></li>
+                                <b>CAPTCHA</b> fields and submit the form, pointing out the voicing of the alert because the div with the message had <code>role="alert"</code></li>
                         </ol>
 
                         <h4>Reference</h4>
-                        <blockquote>If an input error is automatically detected, the item that is in error is
-                            identified and the error is described to the user in text.
+                        <blockquote>If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.
                             <footer>
                                 <cite><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html">WCAG
                                     SC 3.3.1
@@ -1032,9 +1039,7 @@
                                     Labels or Instructions
                                     Level A</a></cite></footer>
                         </blockquote>
-                        <blockquote>If an input error is automatically detected and suggestions for correction are
-                            known, then the suggestions are provided to the user, unless it would jeopardize the
-                            security or purpose of the content.
+                        <blockquote>If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
                             <footer>
                                 <cite><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html">WCAG
                                     SC 3.3.3
@@ -1051,20 +1056,23 @@
                     <h2>Low Vision</h2>
                     <div class="flex-grid thirds">
                         <div class="col fragment">
-                            <figure><img src="img/376px-Eye_disease_simulation,_age-related_macular_degeneration.jpg" alt="Age-related Macular Degeneration Simulation" width="376"
-                                         height="251" class="max-wide" aria-describedby="maculardesc" />
-                                <figcaption>Macular Degeneration</figcaption></figure>
-                            <div id="maculardesc" style="display:none">2 boys, one with arm around the
-                                shoulder of the other. Both hold soccer balls. Where the boys faces would appears towards the center of the visual field is a blurred grayish patch.</div></div>
+                            <figure><img src="img/376px-Eye_disease_simulation,_age-related_macular_degeneration.jpg" alt="Age-related Macular Degeneration Simulation" width="376" height="251" class="max-wide" aria-describedby="maculardesc" />
+                                <figcaption>Macular Degeneration</figcaption>
+                            </figure>
+                            <div id="maculardesc" style="display:none">2 boys, one with arm around the shoulder of the other. Both hold soccer balls. Where the boys faces would appears towards the center of the visual field is a blurred grayish patch.</div>
+                        </div>
                         <div class="col fragment">
                             <figure><img src="img/376px-Eye_disease_simulation,_glaucoma.jpg" alt="Glaucoma Simulation" width="376" height="251" class="max-wide" aria-describedby="glaucomadesc" />
-                                <figcaption>Glaucoma</figcaption></figure>
-                            <div id="glaucomadesc" style="display:none">2 smiling boys, one with arm around
-                                the shoulder of the other. Both hold soccer balls. The periphery of the picture, around the faces of the smiling boys, center, gradually fades to black.</div></div>
-                        <div class="col fragment"><figure><img src="img/cataract-h251.jpg" alt="Glaucoma Simulation" width="376" height="251" class="max-wide" aria-describedby="cataractdesc" />
-                            <figcaption>Cataract</figcaption></figure>
-                            <div id="cataractdesc" style="display:none">2 smiling boys, one with arm around
-                                the shoulder of the other. Both hold soccer balls. The entirety of the picture is blurry.</div></div>
+                                <figcaption>Glaucoma</figcaption>
+                            </figure>
+                            <div id="glaucomadesc" style="display:none">2 smiling boys, one with arm around the shoulder of the other. Both hold soccer balls. The periphery of the picture, around the faces of the smiling boys, center, gradually fades to black.</div>
+                        </div>
+                        <div class="col fragment">
+                            <figure><img src="img/cataract-h251.jpg" alt="Glaucoma Simulation" width="376" height="251" class="max-wide" aria-describedby="cataractdesc" />
+                                <figcaption>Cataract</figcaption>
+                            </figure>
+                            <div id="cataractdesc" style="display:none">2 smiling boys, one with arm around the shoulder of the other. Both hold soccer balls. The entirety of the picture is blurry.</div>
+                        </div>
                     </div>
                     <aside class="notes">
                         <ol>
@@ -1077,7 +1085,7 @@
                             <li><b>Read:</b> Or cataracts, which can cause a blurring of part or all of your visual field.</li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>Pictures: National Eye Institute, National Institutes of Health (Public Domain)</cite></footer>
+                    <footer class="ref"><cite>Pictures: National Eye Institute, National Institutes of Health (Public Domain)</cite></footer>
                 </section>
                 <section>
                     <h2>Low Vision <abbr title="Assistive Technologies">AT</abbr></h2>
@@ -1093,7 +1101,8 @@
                             <li>Show first fragment</li>
                             <li><b>Read:</b> For instance, for many kinds of low vision, screen magnification software can be helpful.</li>
                             <li>Show next fragment</li>
-                            <li><b>Read:</b> Text-to-speech is software that will read what is displayed on the screen, often highlighting words as they're spoken.  Text-to-speech is different from full screen reading software, such as JAWS or VoiceOver, in that it assumes some residual visual that can be used for wayfinding and therefor doesn't have as many ways of navigating through a document using key commands.</li>
+                            <li><b>Read:</b> Text-to-speech is software that will read what is displayed on the screen, often highlighting words as they're spoken. Text-to-speech is different from full screen reading software, such as JAWS or VoiceOver, in
+                                that it assumes some residual visual that can be used for wayfinding and therefor doesn't have as many ways of navigating through a document using key commands.</li>
                             <li>Show next fragment</li>
                             <li><b>Read:</b> Because some kinds of low vision, like macular degeneration, result in a weakening of the ability to distinguish detail, color, and shape, oftentimes, these users will use various color and contrast enhancement</li>
                             <li>Show next fragment</li>
@@ -1104,46 +1113,43 @@
 
                 <section>
                     <h2>Zoom Text</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EEN79RRvKqE?rel=0"
-                            allow="autoplay; encrypted-media" allowfullscreen
-                            title="ZoomText Demo"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EEN79RRvKqE?rel=0" allow="autoplay; encrypted-media" allowfullscreen title="ZoomText Demo"></iframe>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> Let's take a quick look at a demonstration from the accessibility company SSB Bart--now LevelAccess--of an application that provides
-                                all this functionality and more, ZoomText.
+                            <li><b>Read:</b> Let's take a quick look at a demonstration from the accessibility company SSB Bart--now LevelAccess--of an application that provides all this functionality and more, ZoomText.
                             </li>
-                            <li>Play video until <b>0:42</b>, which will show color, contrast, pointer, and cursor
-                                enhancements. Then skip to <b>1:25</b>, where it talks about how magnification can affect one's
-                                ability to notice form error notifications.
+                            <li>Play video until <b>0:42</b>, which will show color, contrast, pointer, and cursor enhancements. Then skip to <b>1:25</b>, where it talks about how magnification can affect one's ability to notice form error notifications.
                             </li>
                             <li>Pause the video when it reaches <b>2:01</b></li>
-                            <li>Explain that the view, when zoomed in, follows the focus, so it is important to note
-                                that, if something appears outside of a users field of view when they click a button, it
-                                is often best to shift focus to whatever appears.
+                            <li>Explain that the view, when zoomed in, follows the focus, so it is important to note that, if something appears outside of a users field of view when they click a button, it is often best to shift focus to whatever appears.
                             </li>
-                            <li>Ask if they remember a similar issues from when we demonstrated form submission on the
-                                Accessible University page.
+                            <li>Ask if they remember a similar issues from when we demonstrated form submission on the Accessible University page.
                             </li>
                             <li>Play the video and pause it when it reaches <b>2:16</b>.</li>
-                            <li><b>Read:</b> There are many ways to magnify content to make text more readable.  Magnification of the entire screen as shown is just one, and, as mentioned has the disadvantage of requiring scrolling in two dimensions in order to read text.
+                            <li><b>Read:</b> There are many ways to magnify content to make text more readable. Magnification of the entire screen as shown is just one, and, as mentioned has the disadvantage of requiring scrolling in two dimensions in order
+                                to read text.
                             </li>
                             <li><b>Read:</b>
                                 <ul>
-                                    <li>One other way to magnify things that doesn't require separate software is to <b>use your browsers native zooming</b> functionality.  </li>
-                                    <li>For instance in Safari I can magnify the page by pressing <kbd>Command</kbd> + <kbd>+</kbd> or choosing <b>Zoom In</b> from the <b>View</b> menu.  </li>
-                                    <li>This will make the text bigger, but can cause problems with horizontal scrolling unless you are using responsive design techniques that transform the layout as the viewport size decreases, which is essentially what is happening when you use Browser Zoom.</li>
+                                    <li>One other way to magnify things that doesn't require separate software is to <b>use your browsers native zooming</b> functionality. </li>
+                                    <li>For instance in Safari I can magnify the page by pressing <kbd>Command</kbd> + <kbd>+</kbd> or choosing <b>Zoom In</b> from the <b>View</b> menu. </li>
+                                    <li>This will make the text bigger, but can cause problems with horizontal scrolling unless you are using responsive design techniques that transform the layout as the viewport size decreases, which is essentially what
+                                        is happening when you use Browser Zoom.</li>
                                 </ul>
                             </li>
-                            <li><b>Read:</b> <ul>
-                                <li>Some people may not want to zoom the entire page, and may prefer to just make the text on the page bigger.  For instance, you can <b>set your preferred text size</b> in Chrome's preferences window.</li>
-                                <li>This should not cause content to reflow, as with browser zoom, and, therefore, this may be a preferable strategy for some users.  </li>
-                                <li>However, unlike browser zoom, this technique only works if the page has been coded to use relative units for font size.  These relative units include em, rem, %, and keywords like large.</li>
-                                <li>However, if you use pixels, points, or inches as your units when setting font size, because these are absolute measures, they will not change when the user sets their preferred text size in their browser's preferences.</li>
-                                <li>Another thing to be careful of it that your page design will accommodate having the user set their text to be up to 200% of its normal size, without any of the text becoming truncated or overlapping other context and thus becoming unreadable.</li>
-                            </ul></li>
+                            <li><b>Read:</b>
+                                <ul>
+                                    <li>Some people may not want to zoom the entire page, and may prefer to just make the text on the page bigger. For instance, you can <b>set your preferred text size</b> in Chrome's preferences window.</li>
+                                    <li>This should not cause content to reflow, as with browser zoom, and, therefore, this may be a preferable strategy for some users. </li>
+                                    <li>However, unlike browser zoom, this technique only works if the page has been coded to use relative units for font size. These relative units include em, rem, %, and keywords like large.</li>
+                                    <li>However, if you use pixels, points, or inches as your units when setting font size, because these are absolute measures, they will not change when the user sets their preferred text size in their browser's preferences.</li>
+                                    <li>Another thing to be careful of it that your page design will accommodate having the user set their text to be up to 200% of its normal size, without any of the text becoming truncated or overlapping other context and
+                                        thus becoming unreadable.</li>
+                                </ul>
+                            </li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>Level Access. "Web Accessibility 101: ZoomText Demo" Online video clip. YouTube, 23 July 2014. Web. 9 October 2018.</cite></footer>
+                    <footer class="ref"><cite>Level Access. "Web Accessibility 101: ZoomText Demo" Online video clip. YouTube, 23 July 2014. Web. 9 October 2018.</cite></footer>
                 </section>
             </section>
 
@@ -1155,11 +1161,12 @@
                         <ul>
                             <li>custom stylesheets</li>
                             <li>contrast enhancements</li>
-                        </ul></div>
+                        </ul>
+                    </div>
                     <div class="right">
                         <img src="img/ucda/color-blind/test-plate.png" alt="Ishihara color test plate" class="white-bg max-wide" aria-labelledby="ishiharaDesc">
                         <span style="display:none" id="ishiharaDesc">With properly configured computer displays, people with normal vision should see the number "74". Many people who are color blind see it as "21", and those with total color blindness may not see any numbers.</span>
-                        <footer class="ref fragment"><cite>Picture:
+                        <footer class="ref"><cite>Picture:
                             Author Unknown /
                             <a href="https://en.wikipedia.org/wiki/Color_blindness#/media/File:Ishihara_9.png">Ishihara Plate 9</a> /
                             Public Domain
@@ -1167,9 +1174,12 @@
                     </div>
                     <aside class="notes">
                         <ol>
-                            <li><b>Read:</b> Color blindness, also known as color vision deficiency, is the decreased ability to see color or differences in color.  For instance, eople with normal vision should see the number "74". Many people who are color blind see it as "21", and those with total color blindness may not see any numbers. <cite><a href="https://en.wikipedia.org/wiki/Color_blindness">Direct quote from Wikipedia article on color blindness</a></cite>
+                            <li><b>Read:</b> Color blindness, also known as color vision deficiency, is the decreased ability to see color or differences in color. For instance, eople with normal vision should see the number "74". Many people who are color
+                                blind see it as "21", and those with total color blindness may not see any numbers. <cite><a href="https://en.wikipedia.org/wiki/Color_blindness">Direct quote from Wikipedia article on color blindness</a></cite>
                             </li>
-                            <li><b>Read:</b> Assistive Technologies or techniques that people with color blindness may employ are custom stylesheets and tools to enhance contrast.  For instance, I knew one user who on a certain site had trouble distinguishing links from the text that surrounded the links in a paragraph, because the contrast ratio between the two colors used was too small.  He dealt with the problem by applying a custom stylesheet that added an underline to all links on that site.
+                            <li><b>Read:</b> Assistive Technologies or techniques that people with color blindness may employ are custom stylesheets and tools to enhance contrast. For instance, I knew one user who on a certain site had trouble distinguishing
+                                links from the text that surrounded the links in a paragraph, because the contrast ratio between the two colors used was too small. He dealt with the problem by applying a custom stylesheet that added an underline to all
+                                links on that site.
                             </li>
                         </ol>
                     </aside>
@@ -1189,8 +1199,9 @@
                             <li><b>Read:</b> Do you see any links in the first paragraph?</li>
                             <li><b>Read:</b> Would you know what was due tomorrow?</li>
                             <li>Disable the <b>Greyscale</b> filter in the <b>Color Carl</b> profile in the <b>Funkify</b> Chrome extension.</li>
-                            <li><b>Read:</b> Though it wasn't necessarily evident from the colorblindness simulator, some people with certain kinds of colorblindness, as well as those with reduced visual acuity, or even just people looking at the page on their phones in bright sunlight, may have trouble reading the smaller red text or the injunction <q><b>don't forget!</b></q>, because the contrast ratio between the foreground and background colors is not sufficient.</li>
-                            <li><b>Read:</b> There are a number of tools that you can use for determining whether the colors you use meet contrast requirements.  Among the most popular is the color contrast check available from the website, WebAIM.</li>
+                            <li><b>Read:</b> Though it wasn't necessarily evident from the colorblindness simulator, some people with certain kinds of colorblindness, as well as those with reduced visual acuity, or even just people looking at the page on
+                                their phones in bright sunlight, may have trouble reading the smaller red text or the injunction <q><b>don't forget!</b></q>, because the contrast ratio between the foreground and background colors is not sufficient.</li>
+                            <li><b>Read:</b> There are a number of tools that you can use for determining whether the colors you use meet contrast requirements. Among the most popular is the color contrast check available from the website, WebAIM.</li>
                             <li>Return to the slide in Safari</li>
                             <li>Reveal the next fragment</li>
                             <li>Open the <a href="demos/color-example.html" target="_blank">Color Example</a> page in Chrome.</li>
@@ -1202,7 +1213,7 @@
                             <li>Disable the <b>Greyscale</b> filter in the <b>Color Carl</b> profile in the <b>Funkify</b> Chrome extension.</li>
                             <li>Return to the slide in Safari</li>
                             <li>Reveal the next fragment</li>
-                            <li><b>Read:</b> There are a number of tools for determining whether the colors you use meet contrast requirements.  Among the most popular is the color contrast check available from the website, WebAIM.</li>
+                            <li><b>Read:</b> There are a number of tools for determining whether the colors you use meet contrast requirements. Among the most popular is the color contrast check available from the website, WebAIM.</li>
                             <li>Open the <a href="https://webaim.org/resources/contrastchecker/" target="_blank" class="fragment">WebAIM Color Contrast Checker</a>.</li>
                             <li><b>Read:</b> If you simply enter the foreground and background colors, you will be shown whether the colors you are examining meet contrast requirements under different WCAG conformance levels.</li>
                         </ol>
@@ -1232,7 +1243,7 @@
                             <li><b>Read:</b> It can also help by making your content more discoverable on the web.</li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>W3C Web Accessibility Initiative (WAI). "Web Accessibility Perspectives: Video Captions" Online video clip. YouTube, 17 May 2016. Web. 9 October 2018.</cite></footer>
+                    <footer class="ref"><cite>W3C Web Accessibility Initiative (WAI). "Web Accessibility Perspectives: Video Captions" Online video clip. YouTube, 17 May 2016. Web. 9 October 2018.</cite></footer>
                 </section>
                 <section>
                     <h3>Adding Captions</h3>
@@ -1265,15 +1276,12 @@
 
                 <section>
                     <h2>Deaf-blind</h2>
-                    <img src="img/humanware-braille-display.jpg"
-                         alt="Humanware Refreshable Braille display below an open MacbookPro." class="stretch max-wide">
+                    <img src="img/humanware-braille-display.jpg" alt="Humanware Refreshable Braille display below an open MacbookPro." class="stretch max-wide">
                     <aside class="notes">
-                        <p><b>Read:</b> Most blind people, at this point, do not read Braille, but for those who and deaf-blind, this
-                            is a requirement.  Blind people who can read Braille will sometimes use refreshable braille
-                            displays, where having a screen reader is inappropriate or distracting, such as when giving a
-                            presentation and needing to refer to your notes.</p>
+                        <p><b>Read:</b> Most blind people, at this point, do not read Braille, but for those who and deaf-blind, this is a requirement. Blind people who can read Braille will sometimes use refreshable braille displays, where having a screen
+                            reader is inappropriate or distracting, such as when giving a presentation and needing to refer to your notes.</p>
                     </aside>
-                    <footer class="ref fragment"><cite>Picture: <a href="https://www.flickr.com/photos/ghwpix/8540137306" target="_blank">Refreshable Braille Display</a> / <a href="https://www.flickr.com/photos/ghwpix/" target="_blank">George Williams</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA 2.0</a></cite></footer>
+                    <footer class="ref"><cite>Picture: <a href="https://www.flickr.com/photos/ghwpix/8540137306" target="_blank">Refreshable Braille Display</a> / <a href="https://www.flickr.com/photos/ghwpix/" target="_blank">George Williams</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA 2.0</a></cite></footer>
                 </section>
 
                 <section>
@@ -1281,11 +1289,13 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr2wFIFft2w" allow="autoplay; encrypted-media" allowfullscreen title="Presenter using Braille display video" style="max-height: calc(60vh); max-width: calc(60vw)"></iframe>
                     <aside class="notes">
                         <ol>
-                            <li><p><b>Read:</b> Here is an example.  Though the person speaking is not deaf-blind, it does show her using a refreshable Braille display</p></li>
+                            <li>
+                                <p><b>Read:</b> Here is an example. Though the person speaking is not deaf-blind, it does show her using a refreshable Braille display</p>
+                            </li>
                             <li>Play video</li>
                         </ol>
                     </aside>
-                    <footer class="ref fragment"><cite>TEDx Talks. "Creating interfaces, creating experiences: Chelsea Cook at TEDxVirginiaTech" Online video clip. YouTube, 6 December 2013. Web. 9 October 2018.</cite></footer>
+                    <footer class="ref"><cite>TEDx Talks. "Creating interfaces, creating experiences: Chelsea Cook at TEDxVirginiaTech" Online video clip. YouTube, 6 December 2013. Web. 9 October 2018.</cite></footer>
                 </section>
 
                 <section>
@@ -1321,7 +1331,8 @@
                                 <li class="fragment">Text-to-speech</li>
                                 <li class="fragment">Screen masking</li>
                                 <li class="fragment">Simplification</li>
-                            </ul></li>
+                            </ul>
+                        </li>
                         <li class="fragment">Change font</li>
                         <li class="fragment">Captions</li>
                         <li class="fragment">Audio descriptions</li>
@@ -1330,7 +1341,7 @@
                     <aside class="notes">
                         <ol>
                             <li>Reveal fragment.</li>
-                            <li><b>Read:</b> People with cognitive disabilities may use assisted reading software.  This software can have many different features:</li>
+                            <li><b>Read:</b> People with cognitive disabilities may use assisted reading software. This software can have many different features:</li>
                             <li>Reveal fragment.</li>
                             <li><b>Read:</b> It can read the text on the screen, often highlighting each word as it goes.</li>
                             <li>Reveal fragment.</li>
@@ -1356,7 +1367,7 @@
                         <li class="fragment">Write at an 8th-grade level (<a href="https://www.webpagefx.com/tools/read-able/" target="_blank">Test readability of text</a>)</li>
                         <li class="fragment">Use capital letters sensibly</li>
                     </ol>
-                    <footer class="ref fragment"><cite>Source: <a href="https://www.intechnic.com/blog/best-practices-to-improve-text-readability-for-optimal-user-experience/" target="_blank">Best Practices to Improve Text Readability for Optimal User Experience</a></cite></footer>
+                    <footer class="ref"><cite>Source: <a href="https://www.intechnic.com/blog/best-practices-to-improve-text-readability-for-optimal-user-experience/" target="_blank">Best Practices to Improve Text Readability for Optimal User Experience</a></cite></footer>
                 </section>
                 <section>
                     <h3>Write Readable Text (More)</h3>
@@ -1368,7 +1379,7 @@
                         <li class="fragment">Use sufficient text-to-background contrast</li>
                         <li class="fragment">Minimize line and paragraph length</li>
                     </ol>
-                    <footer class="ref fragment"><cite>Source: <a href="https://www.intechnic.com/blog/best-practices-to-improve-text-readability-for-optimal-user-experience/" target="_blank">Best Practices to Improve Text Readability for Optimal User Experience</a></cite></footer>
+                    <footer class="ref"><cite>Source: <a href="https://www.intechnic.com/blog/best-practices-to-improve-text-readability-for-optimal-user-experience/" target="_blank">Best Practices to Improve Text Readability for Optimal User Experience</a></cite></footer>
                 </section>
 
                 <section>
@@ -1398,9 +1409,9 @@
                     <h3>Speech Recognition</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/7RHG_XiQ0ck" allow="autoplay; encrypted-media" allowfullscreen title="Voice Recognition Video"></iframe>
                     <aside class="notes">
-                        Note what happens when the man using the sip and puff device tries to activate the Place Order button.  Any idea of why this didn't work?
+                        Note what happens when the man using the sip and puff device tries to activate the Place Order button. Any idea of why this didn't work?
                     </aside>
-                    <footer class="ref fragment"><cite>W3C Web Accessibility Initiative (WAI). "Web Accessibility Perspectives: Voice Recognition" Online video clip. YouTube, 17 May 2016. Web. 9 October 2018.</cite></footer>
+                    <footer class="ref"><cite>W3C Web Accessibility Initiative (WAI). "Web Accessibility Perspectives: Voice Recognition" Online video clip. YouTube, 17 May 2016. Web. 9 October 2018.</cite></footer>
                 </section>
                 <section>
                     <h3>Keyboard Navigation</h3>
@@ -1427,10 +1438,11 @@
                     <ul>
                         <li><a href="https://www.washington.edu/accesscomputing/AU/">Accessible University</a></li>
                         <li><a href="https://www.w3.org/WAI/demos/bad/">Before and After Demonstration</a></li>
-                        <li>Office Supply<ul>
-                            <li><a href="http://www.dhs.state.il.us/accessibility/tests/officesupply/home-b.html">Before</a></li>
-                            <li><a href="http://www.dhs.state.il.us/accessibility/tests/officesupply/home-a.html">After</a></li>
-                        </ul>
+                        <li>Office Supply
+                            <ul>
+                                <li><a href="http://www.dhs.state.il.us/accessibility/tests/officesupply/home-b.html">Before</a></li>
+                                <li><a href="http://www.dhs.state.il.us/accessibility/tests/officesupply/home-a.html">After</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </section>
@@ -1481,120 +1493,137 @@
             </section>
         </div>
     </div>
-<footer class="logo">
-    <a href="https://vt.edu"><img src="img/HorizontalStacked_RGB.svg" width="209" height="63" alt="Virginia Tech"></a>
-</footer>
+    <footer class="logo">
+        <a href="https://vt.edu"><img src="img/HorizontalStacked_RGB.svg" width="209" height="63" alt="Virginia Tech"></a>
+    </footer>
 
     <!-- Printing and PDF exports -->
     <script>
+        (function() {
 
-        (function(){
+            //four CSS files that need to be loaded one after the other
+            var styles = [
+                'css/reveal.css',
+                'css/theme/white.css',
+                'lib/css/zenburn.css',
+                'css/custom.css'
+            ];
 
-          //four CSS files that need to be loaded one after the other
-          var styles = [
-            'css/reveal.css',
-            'css/theme/white.css',
-            'lib/css/zenburn.css',
-            'css/custom.css'
-          ];
+            //three JS files that need to be loaded one after the other
+            var libs = [
+                'lib/js/head.min.js',
+                'js/reveal.js'
+            ];
 
-          //three JS files that need to be loaded one after the other
-          var libs = [
-            'lib/js/head.min.js',
-            'js/reveal.js'
-          ];
+            var injectStyleFromStack = function() {
+                if (styles.length > 0) {
 
-          var injectStyleFromStack = function(){
-            if(styles.length > 0){
+                    //grab the next item on the stack
+                    var nextStyle = styles.shift();
+                    var headTag = document.getElementsByTagName('head')[0];
 
-              //grab the next item on the stack
-              var nextStyle = styles.shift();
-              var headTag = document.getElementsByTagName('head')[0];
+                    //create a link tag with this css file
+                    var linkTag = document.createElement('link');
+                    linkTag.href = nextStyle;
+                    linkTag.rel = 'stylesheet';
+                    linkTag.type = 'text/css';
 
-              //create a link tag with this css file
-              var linkTag = document.createElement('link');
-              linkTag.href = nextStyle;
-              linkTag.rel = 'stylesheet';
-              linkTag.type = 'text/css';
+                    //when successful, inject the next style
+                    linkTag.onload = function(e) {
+                        console.log("---> loaded: " + e.target.href);
+                        injectStyleFromStack();
+                    };
 
-              //when successful, inject the next style
-              linkTag.onload = function(e){
-                console.log("---> loaded: " + e.target.href);
+                    //append the link tag to the <head></head>
+                    headTag.appendChild(linkTag);
+                    console.log("injecting: " + nextStyle);
+                } else injectLibFromStack();
+            };
+
+            var injectLibFromStack = function() {
+                if (libs.length > 0) {
+
+                    //grab the next item on the stack
+                    var nextLib = libs.shift();
+                    var headTag = document.getElementsByTagName('head')[0];
+
+                    //create a script tag with this library
+                    var scriptTag = document.createElement('script');
+                    scriptTag.src = nextLib;
+
+                    //when successful, inject the next script
+                    scriptTag.onload = function(e) {
+                        console.log("---> loaded: " + e.target.src);
+                        injectLibFromStack();
+                    };
+
+                    //append the script tag to the <head></head>
+                    headTag.appendChild(scriptTag);
+                    console.log("injecting: " + nextLib);
+                } else {
+
+
+                    var initObj = {
+
+                        controls: true,
+                        progress: true,
+                        history: true,
+                        center: false,
+
+                        transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                        // More info https://github.com/hakimel/reveal.js#dependencies
+
+                        dependencies: [{
+                            src: 'lib/js/classList.js',
+                            condition: function() {
+                                return !document.body.classList;
+                            }
+                        }, {
+                            src: 'plugin/markdown/marked.js',
+                            condition: function() {
+                                return !!document.querySelector('[data-markdown]');
+                            }
+                        }, {
+                            src: 'plugin/markdown/markdown.js',
+                            condition: function() {
+                                return !!document.querySelector('[data-markdown]');
+                            }
+                        }, {
+                            src: 'plugin/highlight/highlight.js',
+                            async: true,
+                            callback: function() {
+                                hljs.initHighlightingOnLoad();
+                            }
+                        }, {
+                            src: 'plugin/zoom-js/zoom.js',
+                            async: true
+                        }, {
+                            src: 'plugin/notes/notes.js',
+                            async: true
+                        }]
+                    };
+
+
+                    var printView = window.location.search.match(/print-pdf/gi);
+
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.type = 'text/css';
+                    link.href = printView ? 'css/print/pdf.css' : 'css/print/paper.css';
+                    document.getElementsByTagName('head')[0].appendChild(link);
+
+                    // More info https://github.com/hakimel/reveal.js#configuration
+                    Reveal.initialize(initObj);
+                    return;
+                }
+            };
+
+            var unprocessed = window.location.search.match(/uprocessed/gi);
+            if (unprocessed == null) {
+                //start style injection
                 injectStyleFromStack();
-              };
-
-              //append the link tag to the <head></head>
-              headTag.appendChild(linkTag);
-              console.log("injecting: " + nextStyle);
             }
-            else injectLibFromStack();
-          };
-
-          var injectLibFromStack = function(){
-            if(libs.length > 0){
-
-              //grab the next item on the stack
-              var nextLib = libs.shift();
-              var headTag = document.getElementsByTagName('head')[0];
-
-              //create a script tag with this library
-              var scriptTag = document.createElement('script');
-              scriptTag.src = nextLib;
-
-              //when successful, inject the next script
-              scriptTag.onload = function(e){
-                console.log("---> loaded: " + e.target.src);
-                injectLibFromStack();
-              };
-
-              //append the script tag to the <head></head>
-              headTag.appendChild(scriptTag);
-              console.log("injecting: " + nextLib);
-            }
-            else {
-
-
-              var initObj = {
-
-                controls: true,
-                progress: true,
-                history: true,
-                center: false,
-
-                transition: 'fade', // none/fade/slide/convex/concave/zoom
-
-                // More info https://github.com/hakimel/reveal.js#dependencies
-
-                dependencies: [
-                  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                  { src: 'plugin/zoom-js/zoom.js', async: true },
-                  { src: 'plugin/notes/notes.js', async: true }
-                ]
-              };
-
-
-              var printView = window.location.search.match(/print-pdf/gi);
-
-              var link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.type = 'text/css';
-              link.href = printView ? 'css/print/pdf.css' : 'css/print/paper.css';
-              document.getElementsByTagName('head')[0].appendChild(link);
-
-              // More info https://github.com/hakimel/reveal.js#configuration
-              Reveal.initialize(initObj);
-              return;
-            }
-          };
-
-          var unprocessed = window.location.search.match(/uprocessed/gi);
-          if (unprocessed == null) {
-            //start style injection
-            injectStyleFromStack();
-          }
         })();
     </script>
 
