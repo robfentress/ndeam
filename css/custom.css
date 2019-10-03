@@ -152,6 +152,9 @@
   padding: .1em .6em;
   text-shadow: 0 1px 0 #fff; }
 
+#speaker-controls > div.speaker-controls-notes span.caps {
+  text-transform: capitalize; }
+
 .corner:before {
   content: "";
   position: absolute;
