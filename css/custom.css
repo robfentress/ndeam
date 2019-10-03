@@ -3,15 +3,28 @@
 .reveal {
   font-family: "Acherus", Helvetica, sans-serif;
   font-weight: 500; }
-  .reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled, .reveal .controls .navigate-left.enabled:hover {
+  .reveal .controls .navigate-left,
+  .reveal .controls .navigate-left.enabled,
+  .reveal .controls .navigate-left.enabled:hover {
     border-right-color: #75787B; }
-  .reveal .controls .navigate-right, .reveal .controls .navigate-right.enabled, .reveal .controls .navigate-right.enabled:hover {
+  .reveal .controls .navigate-right,
+  .reveal .controls .navigate-right.enabled,
+  .reveal .controls .navigate-right.enabled:hover {
     border-left-color: #75787B; }
-  .reveal .controls .navigate-up, .reveal .controls .navigate-up.enabled, .reveal .controls .navigate-up.enabled:hover {
+  .reveal .controls .navigate-up,
+  .reveal .controls .navigate-up.enabled,
+  .reveal .controls .navigate-up.enabled:hover {
     border-bottom-color: #75787B; }
-  .reveal .controls .navigate-down, .reveal .controls .navigate-down.enabled, .reveal .controls .navigate-down.enabled:hover {
+  .reveal .controls .navigate-down,
+  .reveal .controls .navigate-down.enabled,
+  .reveal .controls .navigate-down.enabled:hover {
     border-top-color: #75787B; }
-  .reveal .slides h1, .reveal .slides h2, .reveal .slides h3, .reveal .slides h4, .reveal .slides h5, .reveal .slides h6 {
+  .reveal .slides h1,
+  .reveal .slides h2,
+  .reveal .slides h3,
+  .reveal .slides h4,
+  .reveal .slides h5,
+  .reveal .slides h6 {
     font-family: "gineso-condensed", sans-serif; }
   .reveal .slides h1.small {
     font-size: 1.7em; }
@@ -22,6 +35,10 @@
     .reveal .slides a:hover {
       color: #861f41;
       text-decoration: underline; }
+  .reveal .slides section .textleft {
+    text-align: left; }
+  .reveal .slides section li.bigbottom {
+    margin-bottom: 1em; }
   .reveal .slides section img {
     border: 4px solid #75787B; }
     .reveal .slides section img.half {
@@ -34,6 +51,17 @@
     margin-left: 55%; }
     .reveal .slides section .right-half .h2 {
       text-align: left; }
+  .reveal .slides section .hilite {
+    background-color: yellow;
+    padding: 0 .5em;
+    border: 4px solid #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    color: blue; }
+  .reveal .slides section .inset {
+    position: absolute;
+    bottom: 4vmin; }
+  .reveal .slides section .shiftdown {
+    position: absolute; }
   .reveal .slides section footer.ref {
     left: 0;
     bottom: 0;
@@ -49,8 +77,8 @@
     display: block;
     margin: 15px 0px;
     text-align: center; }
-  .reveal .slides section.opaque, .reveal .slides section .opaque {
-    /*opacity:0.8;*/
+  .reveal .slides section.opaque,
+  .reveal .slides section .opaque {
     border: 1px solid #e5e1e6;
     -webkit-box-shadow: 0 0 10px #e5e1e6;
     box-shadow: 0 0 10px #e5e1e6;
@@ -68,31 +96,18 @@
       height: 0;
       content: "“";
       margin-left: -.95em;
-      font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+      font: italic 400%/1 Cochin, Georgia, "Times New Roman", serif;
       color: #222222; }
     .reveal .slides section blockquote p {
       font-style: normal; }
-    .reveal .slides section blockquote footer cite a, .reveal .slides section blockquote footer cite a:hover, .reveal .slides section blockquote footer cite a:focus {
+    .reveal .slides section blockquote footer cite a,
+    .reveal .slides section blockquote footer cite a:hover,
+    .reveal .slides section blockquote footer cite a:focus {
       color: #0000EE; }
   .reveal .smaller {
     font-size: 75%; }
   .reveal .stretchy {
     max-height: calc(65vh); }
-  .reveal .section {
-    /*.img_container {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        img {
-            display: block;
-            margin: auto;
-            height: auto;
-            max-height: 100%;
-            width: auto;
-            max-width: 100%;
-        }*/ }
 
 .print-pdf .reveal section footer.ref {
   position: initial; }
@@ -130,7 +145,7 @@
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
   color: #333;
   display: inline-block;
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 1.4;
   margin: 0;
@@ -216,7 +231,8 @@ mark .hljs-string {
   left: inherit; }
 
 @media print {
-  .no-print, .no-print * {
+  .no-print,
+  .no-print * {
     display: none !important; } }
 
 .view-switch {
